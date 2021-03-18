@@ -1,4 +1,6 @@
-
+* {
+    box-sizing: border-box;
+}
 /*logo et barre navigation*/
 ul{
     display: flex;
@@ -19,10 +21,6 @@ a{
 }
 body{
     background-color:#d2f5e3;
-}
-
-* {
-    box-sizing: border-box;
 }
 
 /*activities*/
