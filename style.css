@@ -1,3 +1,4 @@
+
 /*logo et barre navigation*/
 ul{
     display: flex;
@@ -19,4 +20,25 @@ a{
 body{
     background-color:#d2f5e3;
 }
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+* {
+    box-sizing: border-box;
+}
+
+/*activities*/
+#activities {
+    display: flex;
+    flex-flow: row, wrap;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.titleActivities {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+/*activities*/
+
