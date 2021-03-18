@@ -10,11 +10,10 @@
 <body>
     <header>
         <h1>jardin BOTANIQUE Bordeaux</h1>
-        est ce que tu veux merger stp!
         <nav> <!--Navy--> </nav>
     </header>
 
-    <section class="presentation">je suis super content
+    <section class="presentation">
         <!--Nico  premier essai -->
     </section>
 
@@ -30,7 +29,41 @@
     </section>
 
     <section class="form">
-        <!--Arnaud--> test
+        <!--Arnaud--> 
+        <h2>Formulaire de contact</h2>
+        <hr/>
+         <form class="contactForm">
+             <p>Vous êtes ?</p>
+             <input type="radio" name="sexe" value="homme" checked="checked"/> Un homme</br>
+             <input type="radio" name="sexe" value="femme"/> Une femme</br>
+             <label for="name">Prénom :</label><br />
+             <input type="text" name="name" /><br />
+             <label for="name">Nom :</label><br />
+             <input type="text" name="name" /><br />
+             <p>Signe astrologique :</p>
+                <select name="astroSigns">
+                    <option value="bélier"> Bélier</option>
+                    <option value="taureau"> Taureau</option>
+                    <option value="gémeaux"> Gémeaux</option>
+                    <option value="cancer"> Cancer</option>
+                    <option value="lion"> Lion</option>
+                    <option value="vierge"> Vierge</option>
+                    <option value="balance"> Balance</option>
+                    <option value="scorpion"> Scorpion</option>
+                    <option value="sagittaire"> Sagittaire</option>
+                    <option value="capricorne"> Capricorne</option>
+                    <option value="verseau"> Verseau</option>
+                    <option value="poissons"> Poissons</option>
+                </select></br></br>
+             <label for="email">Email:</label><br />
+             <input type="email" name="email" /><br />
+             <label for="message">Message:</label><br />
+             <input type="text" value="Votre commentaire ici..." onfocus="this.value='';"/>
+            
+            
+             <br /><br />
+             <input type="submit" value="Submit" /> <input type="reset" value="Réinitialiser"/>
+           </form>
     </section>
 
     <footer>
