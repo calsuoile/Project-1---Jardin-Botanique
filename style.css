@@ -24,19 +24,28 @@ body{
 }
 
 /*activities*/
-#activities {
-    display: flex;
-    flex-flow: row, wrap;
-    justify-content: space-around;
-    align-items: baseline;
+.activities {
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  background:  #94b4a4;
+  color: #fff;
+  border: transparent;
+  border-radius: 40px;
+  font-size: 1.7rem;
 }
 
 .titleActivities {
-    text-align: center;
+  color: #1c3723;
 }
 
-p {
-    text-align: center;
+#whatToDo {
+  display: flex;
+  flex-flow: row, wrap;
+  justify-content: space-around;
+  align-items: baseline;
 }
 /*activities*/
 
