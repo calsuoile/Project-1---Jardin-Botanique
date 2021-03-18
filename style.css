@@ -1,1 +1,53 @@
+/* presentation */
+.contener {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d2f5e3;
+}
+
+.element-1 {
+  width: 40%;
+  margin: 10px 0 10px 30px;
+} 
+
+.contener2 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-right: 30px;
+}
+
+.element-2 {
+  font-size: 20px;
+  text-align: justify;
+  }
+
+.element-3 {
+  background-color: #0DA; 
+  border: 2px solid green;
+  font-size: 50px;
+  font-style: italic;
+  margin: 15px;
+  text-align: center;
+  box-sizing: content-box;
+}
+
+/* responsive presentation */
+
+@media screen and (max-width: 500px) {
+  .element-1 {
+    display: none;
+  }
+  .element-2 {
+    display: block;
+    width: 100%;
+  }
+  .element-3 {
+    display: block;
+    width: 100%;
+  }
+}
+
+/* ------------------------ */
 
