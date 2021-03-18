@@ -1,32 +1,57 @@
+html body{ /*la base de css (apparemment)*/
+  padding: 0;
+  margin: 0;
+  background-color:#d2f5e3;
+}
+
 * {
     box-sizing: border-box;
 }
-/*logo et barre navigation*/
-ul{
-    display: flex;
-    flex-direction: row;
+.bloc{
+  display: flex;
+  margin: 10% 0 0% 0;
 }
+/*logo et barre navigation web et menu burger*/
+
 .logo{
-    display: left;
-    margin-left: 0;
+  position: right;
 }
-nav {
-    width: 100%;
-    height: 96px;
-    text-align: left;
-    background-color: #94b4a4;
+h1{
+  width: auto;
+  height: auto;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.856);
 }
-li {
-    list-style: none;
-    padding: 30px;
-}
-a{
-  color: #202020;
-}
-body{
-    background-color:#d2f5e3;
+#menuweb{
+  position: fixed;
+  z-index: 9999;
+  left: -25%;
+  top: auto;
+  background: #d2f5e3;
+  padding: 4em 2em;
+  width: 25%;
+  min-height: 100%;
+  box-shadow: 1px 0 1px #d2f5e3;
 }
 
+nav li{
+  list-style: none;
+  display: inline-block;
+}
+nav li a {
+  display: block;
+  background: #94b4a4;
+  transition: background .5s;
+  padding: 2em;
+  text-align: center;
+  box-shadow: 1px 1px 0 #0DA;
+  color: black;
+}
+
+nav li a:hover {
+background: #0DA;
+transition: background .5s;
+}
 
 /*activities*/
 #activities {
