@@ -7,17 +7,9 @@ html body{ /*la base de css (apparemment)*/
 * {
     box-sizing: border-box;
 }
-
 .bloc{
   display: flex;
   margin: 10% 0 0% 0;
-  flex-direction: column;
-}
-
-/*logo et barre navigation*/
-ul{
-    display: flex;
-    flex-direction: row;
 }
 /*logo et barre navigation web et menu burger*/
 
@@ -110,43 +102,24 @@ p {
   font-style: italic;
   margin: 15px;
   text-align: center;
+  box-sizing: content-box;
 }
 
 /* responsive presentation */
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 500px) {
   .element-1 {
     display: none;
   }
-  .contener element-2 {
-    order: 1;
+  .element-2 {
+    display: block;
+    width: 100%;
   }
-
   .element-3 {
-    box-sizing: content-box;
+    display: block;
+    width: 100%;
   }
 }
 /* ------------------------ */
 
-
-/* footer */
-
-footer {
-  display: flex;
-  flex-direction: column;
-  border-top: 2px solid black;
-  
-}
-
-.img {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 10px 0 10px 0;
-}
-
-.cls {
-  width: 80%;
-  margin: auto;
-  text-align: center;
-}
 
