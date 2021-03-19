@@ -5,27 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jardin Botanique</title>
-    <link  href="style.css" rel="stylesheet" type="text/css" >
+    <title>Jardin Botanique Bastide</title>
+    <link href="style.css" rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
-    <header class="bloc">    
-        <div class="imagefond"></div>
-
-        <nav>
-            <ul>
-            <img src="logo-jb.bmp" id="logo"></img>
-            
-                <li><a href="#presentation">Présentation</a></li>
-                <li><a href="#activities">Activités</a></li>
-                <li><a href="#booking">Réservations</a></li>
-                <li><a href="#form">Contact</a></li>
-                <li><a href="#footer">Info+</a></li>
-            </ul>
+    <h1>Bienvenue au jardin Botanique de Bordeaux</h1>
+    <header class="bloc">
+        <nav class="menuweb">
+            <li><a href="#presentation">Présentation</a></li>
+            <li><a href="#activities">Activités</a></li>
+            <li><a href="#booking">Réservations</a></li>
+            <li><a href="#contactForm">Contact</a></li>
+            <li><a href="#footer">Info+</a></li>
         </nav>
+        <img src="logo-jb.bmp" id="logo"></img>
     </header>
+
 
 <div class="bloc">
     <section class="contener">
@@ -44,7 +42,6 @@
             </p> 
             <p class="element-3">Tarif : </br> Entrée gratuite pour les animaux</br> si accompagné</p>
         </div>
-
     <section id="whatToDo">
         <article class="activities">
             <button class="openActivities">Speed Botanique</button>
@@ -114,17 +111,64 @@
     </section>
 </div>
 
+    <div class="bloc">
+        <section id="activities">
+            <article id="speedBotanical">
+                <h2 class="titleActivities">Speed Botanique</h2>
+                <p>Par les temps qui courent, beaucoup de personnes ont vu le cercle social diminuer et leurs santée
+                    mentale
+                    en prendre un coup par la même occasion. <br />
+                    C'est pourquoi nous vous proposons aujourd'hui de venir rencontrer d'autres personnes dans un cadre
+                    respectant les règles dû au covid. <br />
+                    Carré pour 6 personnes, réservation pour 2maximum, que vous soyez une femme, un homme, un jeune, une
+                    personne âgée, votre place vous attend.</p>
+            </article>
 
-<div class="bloc">
-    <section class="form">
-        <h2 class="titleForm">Formulaire de contact</h2>
-        <hr/>
-         <form class="contactForm">
-             <label for="name">Prénom :</label><br />
-             <input type="text" name="name" /><br />
-             <label for="name">Nom :</label><br />
-             <input type="text" name="name" /><br />
-             <p>Signe astrologique :</p>
+            <article id="garden">
+                <h2 class="titleActivities">Garden Party</h2>
+                <p>Vous êtes au chomage en ce moment? N'avez simplement pas envi de travailler? Des jours de repos?
+                    Travaillez à la Wild Code School?<br />
+                    Venez donc prendre quelques cours de jardinage, notre jardinier vous apprendra comment cultiver le
+                    chanvre pour produire quelques belles boutures de CBD (<a
+                        href="https://fr.wikipedia.org/wiki/Cannabidiol#:~:text=Le%20cannabidiol%20(CBD)%20est%20un,au%20moins%203%20formes%20connues."
+                        target="_blank">Cannabidiol</a>) à emporter chez vous. </p>
+            </article>
+
+            <article id="apnea">
+                <h2 class="titleActivities">Hors du temps</h2>
+                <p>Envi d'un peu d'évasion? Venez pratiquez l'apnée dans nos mares, vous serez en total immersion avec
+                    la
+                    nature, et nos professionnels seront là pour vous aider.</p>
+            </article>
+
+            <article id="frogHunting">
+                <h2 class="titleActivities">Chasse aux grenouilles</h2>
+                <p>Vous n'en pouvez plus du télétravail avec les enfants à la maison, venez donc avec eux, profitez d'un
+                    moment pour vous tandis que vous pourrez les laisser pratiquer d'énormes parties de chasse aux
+                    grenouilles afin de les remettre dans nos mares.</p>
+            </article>
+        </section>
+    </div>
+
+    <div class="bloc">
+        <section class="booking">
+            <!--Arnaud-->
+        </section>
+    </div>
+    <div class="bloc">
+        <section class="form">
+            <h2>Formulaire de contact</h2>
+            <hr />
+            <form class="contactForm">
+                <p>Vous êtes ?</p>
+                <input type="radio" name="sexe" value="homme" checked="checked" /> Un homme</br>
+                <input type="radio" name="sexe" value="femme" /> Une femme</br>
+                <label for="name">Prénom :</label><br />
+                <input type="text" name="name" /><br />
+                <label for="name">Nom :</label><br />
+                <input type="text" name="name" /><br />
+                <p>Signe astrologique :</p>
+
                 <select name="astroSigns">
                     <option value="bélier"> Bélier</option>
                     <option value="taureau"> Taureau</option>
@@ -139,45 +183,23 @@
                     <option value="verseau"> Verseau</option>
                     <option value="poissons"> Poissons</option>
                 </select></br></br>
-             <label for="email">Email:</label><br />
-             <input type="email" name="email" /><br />
-             <label for="message">Message:</label><br />
-             <input type="text" value="Votre commentaire ici..." onfocus="this.value='';"/>
-            
-            
-             <br /><br />
-             <input type="submit" value="Submit" /> <input type="reset" value="Réinitialiser"/>
-           </form>
-    </section>
-</div>
+                <label for="email">Email:</label><br />
+                <input type="email" name="email" /><br />
+                <label for="message">Message:</label><br />
+                <input type="text" value="Votre commentaire ici..." onfocus="this.value='';" />
 
-<div class="bloc">
-    <footer>
-        <div class="img">
-            <img src = "Assets/Arnaud.png" alt=""> 
-            <img src = "Assets/Charlie.png" alt="">
-            <img src = "Assets/nhavy.png"alt="">
-            <img src = "Assets/Nicolas.png" alt="">
-        </div>
-        <div class="cls">
-            <p>
-                Grâce à la COVID, les scientifiques du monde entier ont remarqué que l'espéce humaine était néfaste pour tous les 
-                animaux sur Terre. Nous interdisons donc aux humains de pénétrer dans ce parc pour la préservation des espéces animales, végétales, 
-                bref les horaires d'ouvertures sont tous le 1er janvier, le 31 Février, le 25 décembre. Merci de votre compréhension
-            </p>
-        </div>
 
-    </footer>
-</div>
+                <br /><br />
+                <input type="submit" value="Submit" /> <input type="reset" value="Réinitialiser" />
+            </form>
+        </section>
+    </div>
+    <div class="bloc">
+        <footer>
+            <!--Nico-->
+        </footer>
+    </div>
     <script src="script.js"></script>
 </body>
 
 </html>
-
-
-<!--<figure>
-    <p><img src="Assets/Arnaud.png"
-      width="150" height=auto
-      alt="Arnaud">
-    <figcaption>Président de l'association Canna bis</figcaption>
-  </figure>
