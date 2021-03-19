@@ -12,8 +12,8 @@ html body{ /*la base de css (apparemment)*/
 }
 /*logo et barre navigation web et menu burger*/
 
-.logo{
-  position: right;
+#logo{
+  margin-right: 0;
 }
 h1{
   width: auto;
