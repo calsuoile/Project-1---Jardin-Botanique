@@ -143,3 +143,24 @@ button {
 /* ------------------------ */
 
 
+/* footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid black;
+  
+}
+
+.img {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px 0 10px 0;
+}
+
+.cls {
+  width: 80%;
+  text-align: center;
+}
+
+
