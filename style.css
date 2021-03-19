@@ -1,20 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
 body { /*la base de css (apparemment) */
   padding: 0;
   margin: 0;
   background-color:#d2f5e3;
 }
 
-* {
-  box-sizing: border-box;
-}
 .bloc{
   display: flex;
 }
 /*logo et barre navigation web et menu burger*/
 
-.logo{
+#logo{
   position: right;
 }
+
 h1{
   width: auto;
   height: auto;
@@ -48,8 +50,8 @@ nav li a {
 }
 
 nav li a:hover {
-background: #0DA;
-transition: background .5s;
+  background: #0DA;
+  transition: background .5s;
 }
 
 /*activities*/
