@@ -1,5 +1,11 @@
+body { /*la base de css (apparemment) */
+  padding: 0;
+  margin: 0;
+  background-color:#d2f5e3;
+}
+
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .bloc {
