@@ -1,20 +1,22 @@
-html body{ /*la base de css (apparemment)*/
+* {
+  box-sizing: border-box;
+}
+
+body { /*la base de css (apparemment) */
   padding: 0;
   margin: 0;
   background-color:#d2f5e3;
 }
 
-* {
-    box-sizing: border-box;
-}
 .bloc{
   display: flex;
 }
 /*logo et barre navigation web et menu burger*/
 
 #logo{
-  margin-right: 0;
+  position: right;
 }
+
 h1{
   width: auto;
   height: auto;
@@ -48,13 +50,23 @@ nav li a {
 }
 
 nav li a:hover {
-background: #0DA;
-transition: background .5s;
+  background: #0DA;
+  transition: background .5s;
 }
 
 /*activities*/
 .activities {
   text-align: center;
+}
+
+.article {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
 }
 
 button {
@@ -129,5 +141,26 @@ button {
   }
 }
 /* ------------------------ */
+
+
+/* footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid black;
+  
+}
+
+.img {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px 0 10px 0;
+}
+
+.cls {
+  width: 80%;
+  text-align: center;
+}
 
 
