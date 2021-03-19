@@ -82,93 +82,96 @@
         </article>
     </section>
 
+<div class="bloc">
+    <section class="booking">
+        <h2 class="title-booking">Formulaire de réservation</h2>
+        <hr/>
+        <p>Vous êtes :</p>
+             <input type="radio" name="sexe" value="homme" checked="checked"/> Un homme</br>
+             <input type="radio" name="sexe" value="femme"/> Une femme</br>
+             <label for="name">Prénom :</label><br />
+             <input type="text" name="name" /><br />
+             <label for="name">Nom :</label><br />
+             <input type="text" name="name" /><br />
+             <label for="name">Age :</label><br />
+             <input type="text" name="name" /><br />
+        <p>Votre revenu fiscal :</p>
+             <input type="radio" name="revenu" value="premier" checked="checked"/> De 10K€ à 25K€</br>
+             <input type="radio" name="revenu" value="deuxième"/> De 25K€ à 75K€</br>
+             <input type="radio" name="revenu" value="troisième"/> De 75K€ à 150K€</br>
+             <input type="radio" name="revenu" value="quatrième"/> Plus de 150K€</br>
+        <p>Signe astrologique :</p>
+            <select name="astro-signs">
+                <option value="bélier"> Bélier</option>
+                <option value="taureau"> Taureau</option>
+                <option value="gémeaux"> Gémeaux</option>
+                <option value="cancer"> Cancer</option>
+                <option value="lion"> Lion</option>
+                <option value="vierge"> Vierge</option>
+                <option value="balance"> Balance</option>
+                <option value="scorpion"> Scorpion</option>
+                <option value="sagittaire"> Sagittaire</option>
+                <option value="capricorne"> Capricorne</option>
+                <option value="verseau"> Verseau</option>
+                <option value="poissons"> Poissons</option>
+            </select>
+        <p>Choix d'activité :</p>
+            <select name="activities-choice">
+                <option value="speedBot"> Speed Botanique</option>
+                <option value="gardenP"> Garden Party</option>
+                <option value="apnee"> Hors du temps</option>
+                <option value="frogHunt"> Chasse aux grenouilles</option>
+            </select>
+    </section>
+</div>
 
 
-    <div class="bloc">
-        <section class="booking">
-            <h2 class="titleBooking">Formulaire de réservation</h2>
-            <hr/>
-            <p>Vous êtes :</p>
-                <input type="radio" name="sexe" value="homme" checked="checked"/> Un homme</br>
-                <input type="radio" name="sexe" value="femme"/> Une femme</br>
-                <label for="name">Prénom :</label><br />
-                <input type="text" name="name" /><br />
-                <label for="name">Nom :</label><br />
-                <input type="text" name="name" /><br />
-                <label for="name">Age :</label><br />
-                <input type="text" name="name" /><br />
-            <p>Votre revenur fiscal :</p>
-                <input type="radio" name="revenu" value="premier" checked="checked"/> De 10K€ à 25K€</br>
-                <input type="radio" name="revenu" value="deuxième"/> De 25K€ à 75K€</br>
-                <input type="radio" name="revenu" value="deuxième"/> De 75K€ à 150K€</br>
-                <input type="radio" name="revenu" value="deuxième"/> Plus de 150K€</br>
-            <p>Choix d'activité :</p>
-                <select name="astroSigns">
-                    <option value="speedBot"> Speed Botanique</option>
-                    <option value="gardenP"> Garden Party</option>
-                    <option value="apnee"> Hors du temps</option>
-                    <option value="frogHunt"> Chasse aux grenouilles</option>
-                </select></br></br>
-        </section>
-    </div>
+<div class="bloc">
+    <section class="form">
+        <h2 class="titleForm">Formulaire de contact</h2>
+        <hr/>
+        <form class="contactForm">
+            <label for="name">Prénom :</label><br />
+            <input type="text" name="name" /><br />
+            <label for="name">Nom :</label><br />
+            <input type="text" name="name" /><br />
+            <label for="email">Email:</label><br />
+            <input type="email" name="email" /><br />
+            <label for="message">Message:</label><br />
+            <input type="text" value="Votre commentaire ici..." onfocus="this.value='';"/>
+            <br /><br />
+             <input type="submit" value="Submit" /> <input type="reset" value="Réinitialiser"/>
+        </form> 
+    </section>
+</div>
 
-    <div class="bloc">
-        <section class="form">
-            <h2>Formulaire de contact</h2>
-            <hr />
-            <form class="contactForm">
-                <p>Vous êtes ?</p>
-                <input type="radio" name="sexe" value="homme" checked="checked" /> Un homme</br>
-                <input type="radio" name="sexe" value="femme" /> Une femme</br>
-                <label for="name">Prénom :</label><br />
-                <input type="text" name="name" /><br />
-                <label for="name">Nom :</label><br />
-                <input type="text" name="name" /><br />
-                <p>Signe astrologique :</p>
-                <select name="astroSigns">
-                    <option value="bélier"> Bélier</option>
-                    <option value="taureau"> Taureau</option>
-                    <option value="gémeaux"> Gémeaux</option>
-                    <option value="cancer"> Cancer</option>
-                    <option value="lion"> Lion</option>
-                    <option value="vierge"> Vierge</option>
-                    <option value="balance"> Balance</option>
-                    <option value="scorpion"> Scorpion</option>
-                    <option value="sagittaire"> Sagittaire</option>
-                    <option value="capricorne"> Capricorne</option>
-                    <option value="verseau"> Verseau</option>
-                    <option value="poissons"> Poissons</option>
-                </select></br></br>
-                <label for="email">Email:</label><br />
-                <input type="email" name="email" /><br />
-                <label for="message">Message:</label><br />
-                <input type="text" value="Votre commentaire ici..." onfocus="this.value='';" />
+<div class="bloc">
+    <footer>
+        <div class="img">
+            <img src = "Assets/Arnaud.png" alt=""> 
+            <img src = "Assets/Charlie.png" alt="">
+            <img src = "Assets/nhavy.png"alt="">
+            <img src = "Assets/Nicolas.png" alt="">
+        </div>
+        <div class="cls">
+            <p>
+                Grâce à la COVID, les scientifiques du monde entier ont remarqué que l'espéce humaine était néfaste pour tous les 
+                animaux sur Terre. Nous interdisons donc aux humains de pénétrer dans ce parc pour la préservation des espéces animales, végétales, 
+                bref les horaires d'ouvertures sont tous le 1er janvier, le 31 Février, le 25 décembre. Merci de votre compréhension
+            </p>
+        </div>
+
+    </footer>
+</div>
+    <script src="script.js"></script>
+</body>
+
+</html>
 
 
-                <br /><br />
-                <input type="submit" value="Submit" /> <input type="reset" value="Réinitialiser" />
-            </form>
-        </section>
-    </div>
-    <div class="bloc">
-        <footer>
-            <div class="img">
-                <img src = "Assets/Arnaud.png" alt=""> 
-                <img src = "Assets/Charlie.png" alt="">
-                <img src = "Assets/nhavy.png"alt="">
-                <img src = "Assets/Nicolas.png" alt="">
-            </div>
-            <div class="cls">
-                <p>
-                    Grâce à la COVID, les scientifiques du monde entier ont remarqué que l'espéce humaine était néfaste pour tous les 
-                    animaux sur Terre. Nous interdisons donc aux humains de pénétrer dans ce parc pour la préservation des espéces animales, végétales, 
-                    bref les horaires d'ouvertures sont tous le 1er janvier, le 31 Février, le 25 décembre. Merci de votre compréhension
-                </p>
-            </div>
-    
-        </footer>
-    </div>
-        <script src="script.js"></script>
-    </body>
-    
-    </html>
+<!--<figure>
+    <p><img src="Assets/Arnaud.png"
+      width="150" height=auto
+      alt="Arnaud">
+    <figcaption>Président de l'association Canna bis</figcaption>
+  </figure>
