@@ -217,10 +217,6 @@ button:hover{
   justify-content: space-around;
 }
 
-
-
-
-
 .fourth-content-element-item {
   display: flex;
   justify-content: space-evenly;
@@ -256,5 +252,4 @@ button:hover{
   text-align: center;
 }
 .fourth-content-element-name-title {
-
 }
