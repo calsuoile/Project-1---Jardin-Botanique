@@ -10,18 +10,27 @@
 </head>
 
 <body>
-    <h1>Bienvenue au jardin Botanique de Bordeaux</h1>
-    <header class="bloc">
-        <nav class="menuweb">
-            <li><a href="#presentation">Présentation</a></li>
-            <li><a href="#activities">Activités</a></li>
-            <li><a href="#booking">Réservations</a></li>
-            <li><a href="#contactForm">Contact</a></li>
-            <li><a href="#footer">Info+</a></li>
-        </nav>
-        <img src="assets/images/logo-jb.bmp" id="logo"></img>
-    </header>
+    <header>
+        <div class="boximgheader"><img
+                src="https://www.bwhotelcappellodoro-bg.it/resources/images/7cca6cce-003f-43a8-af0a-560eb2f82795/fr/FWB/eco-friendly-bergamo.jpg">
+        </div>
+        <div class="bienvenue">
+            <h1>Bienvenue au <img src="assets/images/logo-jb.bmp" id="logo"> de Bordeaux</h1>
+        </div>
+        <div id="menuburger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
 
+        <nav class="menuweb">
+            <li><a href=".contener">Présentation</a></li>
+            <li><a href="#whatToDo">Activités</a></li>
+            <li><a href=".booking">Réservations</a></li>
+            <li><a href=".contactForm">Contact</a></li>
+            <li><a href=".img">Info+</a></li>
+        </nav>
+    </header>
 
     <div class="bloc">
         <section class="contener">
@@ -51,7 +60,7 @@
     </div>
 
     <section id="whatToDo">
-        <article class="activities">
+        <article id="speed_botanique" class="activities">
             <button class="openActivities">Speed Botanique</button>
             <div class="article">
                 <p>Par les temps qui courent, beaucoup de personnes ont vu le cercle social diminuer et leurs santée
@@ -64,7 +73,7 @@
             </div>
         </article>
 
-        <article class="activities">
+        <article id="garden_party" class="activities">
             <button class="openActivities">Garden Party</button>
             <div class="article">
                 <p>Vous êtes au chomage en ce moment? N'avez simplement pas envi de travailler? Des jours de repos?
@@ -77,7 +86,7 @@
             </div>
         </article>
 
-        <article class="activities">
+        <article id="hors_du_temps" class="activities">
             <button class="openActivities">Hors du temps</button>
             <div class="article">
                 <p>Envi d'un peu d'évasion? Venez pratiquez l'apnée dans nos mares, vous serez en total immersion avec
@@ -86,7 +95,7 @@
             </div>
         </article>
 
-        <article class="activities">
+        <article id="grenouilles" class="activities">
             <button class="openActivities">Chasse aux grenouilles</button>
             <div class="article">
                 <p>Vous n'en pouvez plus du télétravail avec les enfants à la maison, venez donc avec eux, profitez d'un
