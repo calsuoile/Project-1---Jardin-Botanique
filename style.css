@@ -160,26 +160,56 @@ button {
 
 /* footer */
 
-footer {
+.fourth-content-element {
   display: flex;
-  flex-direction: column;
   border-top: 2px solid black;
   margin-top: 20px;
+  padding-top: 20px;
 }
 
-.img {
+.fourth-content-element .fourth-content-element-item {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+
+
+.fourth-content-element-item {
   display: flex;
   justify-content: space-evenly;
-  margin: 20px 0 10px 0;
+  align-items: center;
+  max-width: 40rem;
+  max-height: 30rem;
+  overflow: hidden;
+  background-color: lightgoldenrodyellow;
 }
 
-.img img {
-  width: 150px;
-  height: auto;
+.fourth-content-element-item img {
+  border-radius: 2rem 0 0 2rem;
+  min-height: 30rem;
+  min-width: 20rem;
 }
 
-.cls {
-  width: 80%;
-  text-align: justify;
+.fourth-content-element-item-group {
+  padding: 1rem;
+  width: 20rem;
   margin: auto;
+}
+
+.fourth-content-element-item figure {
+  flex-direction: column;
+}
+
+.fourth-content-element-item figure figcaption {
+  padding: 4rem 0;
+}
+
+.fourth-content-element-name {
+  margin-top: 2rem;
+  text-align: center;
+}
+.fourth-content-element-name-title {
+
 }
