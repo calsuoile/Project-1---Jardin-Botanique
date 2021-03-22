@@ -10,22 +10,31 @@
 </head>
 
 <body>
-    <h1>Bienvenue au jardin Botanique de Bordeaux</h1>
-    <header class="bloc">
-        <nav class="menuweb">
-            <li><a href="#presentation">Présentation</a></li>
-            <li><a href="#activities">Activités</a></li>
-            <li><a href="#booking">Réservations</a></li>
-            <li><a href="#contactForm">Contact</a></li>
-            <li><a href="#footer">Info+</a></li>
-        </nav>
-        <img src="logo-jb.bmp" id="logo"></img>
-    </header>
+    <header>
+        <div class="boximgheader"><img
+                src="https://www.bwhotelcappellodoro-bg.it/resources/images/7cca6cce-003f-43a8-af0a-560eb2f82795/fr/FWB/eco-friendly-bergamo.jpg">
+        </div>
+        <div class="bienvenue">
+            <h1>Bienvenue au <img src="assets/images/logo-jb.bmp" id="logo"> de Bordeaux</h1>
+        </div>
+        <div id="menuburger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
 
+        <nav class="menuweb">
+            <li><a href=".contener">Présentation</a></li>
+            <li><a href="#whatToDo">Activités</a></li>
+            <li><a href=".booking">Réservations</a></li>
+            <li><a href=".contactForm">Contact</a></li>
+            <li><a href=".img">Info+</a></li>
+        </nav>
+    </header>
 
     <div class="bloc">
         <section class="contener">
-            <img class="element-1" src="Assets/image_jardin_botanique.png" alt="" />
+            <img class="element-1" src="assets/images/image_jardin_botanique.png" alt="" />
             <div class="contener2">
                 <p class="element-2">Historique: Le Jardin botanique de Bordeaux est créé en 1629, sous le nom de «
                     Jardin des Plantes »1.
@@ -51,7 +60,7 @@
     </div>
 
     <section id="whatToDo">
-        <article class="activities">
+        <article id="speed_botanique" class="activities">
             <button class="openActivities">Speed Botanique</button>
             <div class="article">
                 <p>Par les temps qui courent, beaucoup de personnes ont vu le cercle social diminuer et leurs santée
@@ -64,7 +73,7 @@
             </div>
         </article>
 
-        <article class="activities">
+        <article id="garden_party" class="activities">
             <button class="openActivities">Garden Party</button>
             <div class="article">
                 <p>Vous êtes au chomage en ce moment? N'avez simplement pas envi de travailler? Des jours de repos?
@@ -77,7 +86,7 @@
             </div>
         </article>
 
-        <article class="activities">
+        <article id="hors_du_temps" class="activities">
             <button class="openActivities">Hors du temps</button>
             <div class="article">
                 <p>Envi d'un peu d'évasion? Venez pratiquez l'apnée dans nos mares, vous serez en total immersion avec
@@ -86,7 +95,7 @@
             </div>
         </article>
 
-        <article class="activities">
+        <article id="grenouilles" class="activities">
             <button class="openActivities">Chasse aux grenouilles</button>
             <div class="article">
                 <p>Vous n'en pouvez plus du télétravail avec les enfants à la maison, venez donc avec eux, profitez d'un
@@ -243,22 +252,94 @@
     </section>
             <div class="bloc">
                 <footer>
-                    <div class="img">
-                        <img src="Assets/Arnaud.JPG" alt="">
-                        <img src="Assets/Charlie.JPG" alt="">
-                        <img src="Assets/Nhavy.JPG" alt="">
-                        <img src="Assets/Nicolas.JPG" alt="">
-                    </div>
-                    <div class="cls">
-                        <p>
-                            Grâce à la COVID, les scientifiques du monde entier ont remarqué que l'espéce humaine était
-                            néfaste pour tous les
-                            animaux sur Terre. Nous interdisons donc aux humains de pénétrer dans ce parc pour la
-                            préservation des espéces animales, végétales,
-                            bref les horaires d'ouvertures sont tous le 1er janvier, le 31 Février, le 25 décembre.
-                            Merci de votre compréhension
-                        </p>
-                    </div>
+
+                    <ul class="fourth-content-element">
+
+                        <li class="fourth-content-element-item">
+                            <img loading="lazy" src="assets/images/Arnaud.jpg" alt="">
+                            <div class="fourth-content-element-item-group">
+                                <h3 class="fourth-content-element-name">Arnaud</h3>
+                                <p class="fourth-content-element-name-title">Responsable sécurité</p>
+                                <figure>
+                                    <figcaption>Est-ce que tu as peur du noir&nbsp;?</figcaption>
+                                    <audio controls src="">
+                                        Your browser does not support the
+                                        <code>audio</code> element.
+                                    </audio>
+                                </figure>
+                            </div>
+                        </li>
+
+                        <li class="fourth-content-element-item">
+                            <img loading="lazy" src="assets/images/Charlie.jpg" alt="">
+                            <div class="fourth-content-element-item-group">
+                                <h3 class="fourth-content-element-name">Charlie</h3>
+                                <p class="fourth-content-element-name-title">Jardinier</p>
+                                <figure>
+                                    <figcaption>La passion des jardins&nbsp;?</figcaption>
+                                    <audio controls src="">
+                                        Your browser does not support the
+                                        <code>audio</code> element.
+                                    </audio>
+                                </figure>
+                            </div>
+                        </li>
+
+                        <li class="fourth-content-element-item">
+                            <img loading="lazy" src="assets/images/NhaVy.jpg" alt="">
+                            <div class="fourth-content-element-item-group">
+                                <h3 class="fourth-content-element-name">Nha Vy</h3>
+                                <p class="fourth-content-element-name-title">Paysagiste</p>
+                                <figure>
+                                    <figcaption>Les paysages suivant les saisons&nbsp;?</figcaption>
+                                    <audio controls src="">
+                                        Your browser does not support the
+                                        <code>audio</code> element.
+                                    </audio>
+                                </figure>
+                            </div>
+                        </li>
+
+                        <li class="fourth-content-element-item">
+                            <img loading="lazy" src="assets/images/Nicolas.jpg" alt="">
+                            <div class="fourth-content-element-item-group">
+                                <h3 class="fourth-content-element-name">Nicolas</h3>
+                                <p class="fourth-content-element-name-title">Elagueur</p>
+                                <figure>
+                                    <figcaption>As tu le vertige&nbsp;?</figcaption>
+                                    <audio controls src="">
+                                        Your browser does not support the
+                                        <code>audio</code> element.
+                                    </audio>
+                                </figure>
+                            </div>
+                        </li>
+
+                    </ul>
+
+
+
+
+
+
+
+
+
+
+ <!--   <div class="img">
+<img src="assets/images/Arnaud.jpg" alt="">
+<img src="assets/images/Charlie.jpg" alt="">
+<img src="assets/images/NhaVy.jpg" alt="">
+<img src="assets/images/Nicolas.jpg" alt="">
+</div>
+<div class="cls">
+<p>
+Grâce à la COVID, les scientifiques du monde entier ont remarqué que l'espéce humaine était
+néfaste pour tous les animaux sur Terre. Nous interdisons donc aux humains de pénétrer dans 
+ ce parc pour la préservation des espéces animales, végétales, bref les horaires d'ouvertures
+sont tous le 1er janvier, le 31 Février, le 25 décembre. Merci de votre compréhension
+</p>
+</div>--> 
 
                 </footer>
             </div>
