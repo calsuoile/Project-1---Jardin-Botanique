@@ -17,8 +17,9 @@ body {
 
 /*partie header*/
 /* id = # , class = . */
-#logo{
+#logo {
   padding: 0 70px;
+}
 
 h1 {
   width: auto;
@@ -241,11 +242,12 @@ button:hover{
 
 
 /* début mise en forme formulaire booking */
-.booking, .form{
-    margin: 10px;
+.booking, .form {
+  margin: 10px;
 }
+
 hr {
-    border-color: #d2f5e3;
+  border-color: #d2f5e3;
 }
 
 fieldset {
@@ -256,20 +258,22 @@ fieldset {
 }
 
 .reservation {
-    display: flex;
+  display: flex;
 }
+
 .formulaire {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
+
 .bouton-booking {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .bouton-form {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 legend {
@@ -312,18 +316,6 @@ input[type=submit] {
   box-shadow: 1px 1px 0 #0DA;
   border-radius: 3px;
 }
-
-input[type=reset] {
-  width: 100px;
-  padding: 10px;
-  margin-left: 4px;
-  background-color:#94b4a4;
-  color: #fff;
-  border-width: thin;
-  box-shadow: 1px 1px 0 #0DA;
-  border-radius: 3px;
-}
-
 
 /* fin mise en forme formulaire booking */
 .fourth-content-element-item figure {
