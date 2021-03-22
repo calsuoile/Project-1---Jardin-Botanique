@@ -1,29 +1,49 @@
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
-body { /*la base de css (apparemment) */
+body {
+  /*la base de css (apparemment) */
   padding: 0;
   margin: 0;
-  background-color:#d2f5e3;
+  background-color: #d2f5e3;
+  hyphens: auto;
 }
 
-.bloc{
+.bloc {
   display: flex;
 }
-/*logo et barre navigation web et menu burger*/
 
+/*partie header*/
+/* id = # , class = . */
 #logo{
-  position: right;
-}
+  padding: 0 70px;
 
-h1{
+h1 {
   width: auto;
   height: auto;
   text-align: center;
-  color: rgba(0, 0, 0, 0.856);
+  color: rgb(16, 39, 20);
+  font-style: italic;
 }
+
+.boximgheader { 
+  position: relative;
+  text-align: center;}
+
+.bienvenue {
+  background-color: rgb(205, 248, 196);
+  opacity: 0.9;
+  position:absolute;
+  top: 5%;
+  left: 40%;
+  right: 30%;
+  transform: translate(50%,50%);
+}
+
 #menuweb{
+
   position: fixed;
   z-index: 9999;
   left: -25%;
@@ -35,24 +55,34 @@ h1{
   box-shadow: 1px 0 1px #d2f5e3;
 }
 
-nav li{
+nav li {
   list-style: none;
   display: inline-block;
 }
+
 nav li a {
   display: block;
   background: #94b4a4;
-  transition: background .5s;
   padding: 2em;
   text-align: center;
-  box-shadow: 1px 1px 0 #0DA;
+  box-shadow: 1px 1px 0 #0da;
   color: black;
 }
 
 nav li a:hover {
   background: #0DA;
-  transition: background .5s;
 }
+
+/* menuburger*/
+
+#menuburger .bar1, #menuburger .bar2, #menuburger .bar3 {
+  width:32px; 
+  height:5px; 
+  background-color:#94b4a4; 
+  margin:6px 0; 
+  transition:0.4s; ;
+}
+
 
 /*activities*/
 .activities {
@@ -80,7 +110,7 @@ button:hover{
 
 .closeActivities {
   padding: 10px 20px;
-  background:  #94b4a4;
+  background: #94b4a4;
   color: #fff;
   border: transparent;
   border-radius: 40px;
@@ -119,22 +149,27 @@ button:hover{
 .element-1 {
   width: 40%;
   margin: 10px 0 10px 30px;
-} 
+}
 
 .contener2 {
   display: flex;
   flex-direction: column;
   width: 50%;
   margin-right: 30px;
+  height: 100%;
+  justify-content: space-between;
 }
 
 .element-2 {
   font-size: 20px;
   text-align: justify;
-  }
+  border: 1px solid orange;
+  line-height: 1.8;
+  letter-spacing: 1.5px;
+}
 
 .element-3 {
-  background-color: #0DA; 
+  background-color: #0da;
   border: 2px solid green;
   font-size: 50px;
   font-style: italic;
@@ -145,9 +180,17 @@ button:hover{
 
 /* responsive presentation */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
+  .contener {
+    flex-direction: column;
+  }
+  
   .element-1 {
-    display: none;
+    display: block;
+  }
+
+  .contener2 {
+    width: 100%;
   }
   .element-2 {
     display: block;
@@ -160,25 +203,28 @@ button:hover{
 }
 /* ------------------------ */
 
-
 /* footer */
 
 footer {
   display: flex;
   flex-direction: column;
   border-top: 2px solid black;
-  
+  margin-top: 20px;
 }
 
 .img {
   display: flex;
   justify-content: space-evenly;
-  margin: 10px 0 10px 0;
+  margin: 20px 0 10px 0;
+}
+
+.img img {
+  width: 150px;
+  height: auto;
 }
 
 .cls {
   width: 80%;
-  text-align: center;
+  text-align: justify;
+  margin: auto;
 }
-
-
