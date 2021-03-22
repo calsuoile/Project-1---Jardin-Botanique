@@ -163,4 +163,89 @@ footer {
   text-align: center;
 }
 
+/* début mise en forme formulaire booking */
+.booking, .form{
+    margin: 10px;
+}
+hr {
+    border-color: #d2f5e3;
+}
 
+fieldset {
+  margin-bottom: 15px;
+  padding: 10px; 
+  width: 50%;
+  border-color: #94b4a4;
+}
+
+.reservation {
+    display: flex;
+}
+.formulaire {
+    display: flex;
+    justify-content: center;
+}
+.bouton-booking {
+    display: flex;
+    justify-content: center;
+}
+
+.bouton-form {
+    display: flex;
+    justify-content: center;
+}
+
+legend {
+  padding: 0px 3px;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+ 
+label {
+  width: 110px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 6px;
+  
+}
+ 
+input:focus {
+  background: #eaeaea;
+}
+ 
+input, textarea {
+  width: 249px;
+
+}
+ 
+textarea {
+  height: 100px;
+}
+ 
+select {
+  width: 254px;
+}
+ 
+input[type=submit] {
+  width: 100px;
+  padding: 10px;
+  background-color:#94b4a4;
+  color: #fff;
+  border-width: thin;
+  box-shadow: 1px 1px 0 #0DA;
+  border-radius: 3px;
+}
+
+input[type=reset] {
+  width: 100px;
+  padding: 10px;
+  margin-left: 4px;
+  background-color:#94b4a4;
+  color: #fff;
+  border-width: thin;
+  box-shadow: 1px 1px 0 #0DA;
+  border-radius: 3px;
+}
+
+
+/* fin mise en forme formulaire booking */
