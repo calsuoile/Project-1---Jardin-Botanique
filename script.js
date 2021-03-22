@@ -7,7 +7,8 @@ openActivities.addEventListener("click", function(){
     article.style.display = "block";
 })
 
-closeActivities.addEventListener("clicl", function(){
+closeActivities.addEventListener("click", function(){
     article.style.display = "none";
 })
 
+//-------Nha Vy----//

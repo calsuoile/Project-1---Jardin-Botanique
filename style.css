@@ -11,18 +11,34 @@ body { /*la base de css (apparemment) */
 .bloc{
   display: flex;
 }
-/*logo et barre navigation web et menu burger*/
-
+/*partie header*/
+/* id = # , class = . */
 #logo{
-  position: right;
+  padding: 0 70px;
 }
 
 h1{
   width: auto;
   height: auto;
   text-align: center;
-  color: rgba(0, 0, 0, 0.856);
+  color: rgb(16, 39, 20);
+  font-style: italic;
 }
+
+.boximgheader { 
+  position: relative;
+  text-align: center;}
+
+.bienvenue {
+  background-color: rgb(205, 248, 196);
+  opacity: 0.9;
+  position:absolute;
+  top: 5%;
+  left: 40%;
+  right: 30%;
+  transform: translate(50%,50%);
+}
+
 #menuweb{
   position: fixed;
   z-index: 9999;
@@ -39,10 +55,10 @@ nav li{
   list-style: none;
   display: inline-block;
 }
+
 nav li a {
   display: block;
   background: #94b4a4;
-  transition: background .5s;
   padding: 2em;
   text-align: center;
   box-shadow: 1px 1px 0 #0DA;
@@ -51,8 +67,18 @@ nav li a {
 
 nav li a:hover {
   background: #0DA;
-  transition: background .5s;
 }
+
+/* menuburger*/
+
+#menuburger .bar1, #menuburger .bar2, #menuburger .bar3 {
+  width:32px; 
+  height:5px; 
+  background-color:#94b4a4; 
+  margin:6px 0; 
+  transition:0.4s; ;
+}
+
 
 /*activities*/
 .activities {
