@@ -205,26 +205,141 @@ button:hover{
 
 /* footer */
 
-footer {
+.fourth-content-element {
   display: flex;
-  flex-direction: column;
   border-top: 2px solid black;
   margin-top: 20px;
+  padding-top: 20px;
 }
 
-.img {
+.fourth-content-element .fourth-content-element-item {
+  display: flex;
+  justify-content: space-around;
+}
+
+.fourth-content-element-item {
   display: flex;
   justify-content: space-evenly;
-  margin: 20px 0 10px 0;
+  align-items: center;
+  max-width: 40rem;
+  max-height: 30rem;
+  overflow: hidden;
+  background-color: lightgoldenrodyellow;
 }
 
-.img img {
-  width: 150px;
-  height: auto;
+.fourth-content-element-item img {
+  border-radius: 2rem 0 0 2rem;
+  min-height: 30rem;
+  min-width: 20rem;
 }
 
-.cls {
-  width: 80%;
-  text-align: justify;
+.fourth-content-element-item-group {
+  padding: 1rem;
+  width: 20rem;
   margin: auto;
 }
+
+
+/* début mise en forme formulaire booking */
+.booking, .form{
+    margin: 10px;
+}
+hr {
+    border-color: #d2f5e3;
+}
+
+fieldset {
+  margin-bottom: 15px;
+  padding: 10px; 
+  width: 50%;
+  border-color: #94b4a4;
+}
+
+.reservation {
+    display: flex;
+}
+.formulaire {
+    display: flex;
+    justify-content: center;
+}
+.bouton-booking {
+    display: flex;
+    justify-content: center;
+}
+
+.bouton-form {
+    display: flex;
+    justify-content: center;
+}
+
+legend {
+  padding: 0px 3px;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+ 
+label {
+  width: 110px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 6px;
+  
+}
+ 
+input:focus {
+  background: #eaeaea;
+}
+ 
+input, textarea {
+  width: 249px;
+
+}
+ 
+textarea {
+  height: 100px;
+}
+ 
+select {
+  width: 254px;
+}
+ 
+input[type=submit] {
+  width: 100px;
+  padding: 10px;
+  background-color:#94b4a4;
+  color: #fff;
+  border-width: thin;
+  box-shadow: 1px 1px 0 #0DA;
+  border-radius: 3px;
+}
+
+input[type=reset] {
+  width: 100px;
+  padding: 10px;
+  margin-left: 4px;
+  background-color:#94b4a4;
+  color: #fff;
+  border-width: thin;
+  box-shadow: 1px 1px 0 #0DA;
+  border-radius: 3px;
+}
+
+
+/* fin mise en forme formulaire booking */
+.fourth-content-element-item figure {
+  flex-direction: column;
+}
+
+.fourth-content-element-item figure figcaption {
+  padding: 4rem 0;
+}
+
+.fourth-content-element-name {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.fourth-content-element-name-title {
+
+}
+
