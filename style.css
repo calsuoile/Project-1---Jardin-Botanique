@@ -1,23 +1,27 @@
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
-body { /*la base de css (apparemment) */
+body {
+  /*la base de css (apparemment) */
   padding: 0;
   margin: 0;
-  background-color:#d2f5e3;
+  background-color: #d2f5e3;
+  hyphens: auto;
 }
 
-.bloc{
+.bloc {
   display: flex;
 }
+
 /*partie header*/
 /* id = # , class = . */
 #logo{
   padding: 0 70px;
-}
 
-h1{
+
+h1 {
   width: auto;
   height: auto;
   text-align: center;
@@ -40,6 +44,7 @@ h1{
 }
 
 #menuweb{
+
   position: fixed;
   z-index: 9999;
   left: -25%;
@@ -51,7 +56,7 @@ h1{
   box-shadow: 1px 0 1px #d2f5e3;
 }
 
-nav li{
+nav li {
   list-style: none;
   display: inline-block;
 }
@@ -61,7 +66,7 @@ nav li a {
   background: #94b4a4;
   padding: 2em;
   text-align: center;
-  box-shadow: 1px 1px 0 #0DA;
+  box-shadow: 1px 1px 0 #0da;
   color: black;
 }
 
@@ -97,7 +102,7 @@ nav li a:hover {
 
 button {
   padding: 10px 20px;
-  background:  #94b4a4;
+  background: #94b4a4;
   color: #fff;
   border: transparent;
   border-radius: 40px;
@@ -127,22 +132,27 @@ button {
 .element-1 {
   width: 40%;
   margin: 10px 0 10px 30px;
-} 
+}
 
 .contener2 {
   display: flex;
   flex-direction: column;
   width: 50%;
   margin-right: 30px;
+  height: 100%;
+  justify-content: space-between;
 }
 
 .element-2 {
   font-size: 20px;
   text-align: justify;
-  }
+  border: 1px solid orange;
+  line-height: 1.8;
+  letter-spacing: 1.5px;
+}
 
 .element-3 {
-  background-color: #0DA; 
+  background-color: #0da;
   border: 2px solid green;
   font-size: 50px;
   font-style: italic;
@@ -153,9 +163,17 @@ button {
 
 /* responsive presentation */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
+  .contener {
+    flex-direction: column;
+  }
+  
   .element-1 {
-    display: none;
+    display: block;
+  }
+
+  .contener2 {
+    width: 100%;
   }
   .element-2 {
     display: block;
@@ -168,25 +186,28 @@ button {
 }
 /* ------------------------ */
 
-
 /* footer */
 
 footer {
   display: flex;
   flex-direction: column;
   border-top: 2px solid black;
-  
+  margin-top: 20px;
 }
 
 .img {
   display: flex;
   justify-content: space-evenly;
-  margin: 10px 0 10px 0;
+  margin: 20px 0 10px 0;
+}
+
+.img img {
+  width: 150px;
+  height: auto;
 }
 
 .cls {
   width: 80%;
-  text-align: center;
+  text-align: justify;
+  margin: auto;
 }
-
-
