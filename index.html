@@ -116,8 +116,8 @@
             <legend> Informations personnelles</legend>
                 <label for="sexe">Sexe</label>
                 <select id="sexe">
-                    <option value="H" name="sexe" checked="checked"/> Homme
-                    <option value="F" name="sexe"/> Femme
+                    <option value="H" name="sexe" checked="checked"> Homme
+                    <option value="F" name="sexe"> Femme
                 </select><br>
                 <label for="name">Nom Prénom</label>
                 <input id="nom" placeholder="Dupont Michel" required=""><br>
@@ -159,64 +159,22 @@
                 </select><br>   
                 <label for="person-number">Nombre de personnes</label>
                 <input id="person-number" type="number" step="0,1" min="1" max="6" placeholder="Min 1 pers. - max 6 pers." required=""><br>
-                <label for="weekday-choice">Jour</label>
-                <select id="weekday-choice">
-                    <option value="lundi"> Lundi</option>
-                    <option value="mardi"> Mardi</option>
-                    <option value="mercredi"> Mercredi</option>
-                    <option value="jeudi"> Jeudi</option>
-                    <option value="vendredi"> Vendredi</option>
-                    <option value="samedi"> Samedi</option>
-                    <option value="dimanche"> Dimanche</option>
-                </select><br> 
                 <label for="date-choice">Date</label>
                 <select id="date-choice">
-                    <option value="1"> 1</option>
-                    <option value="2"> 2</option>
-                    <option value="3"> 3</option>
-                    <option value="4"> 4</option>
-                    <option value="5"> 5</option>
-                    <option value="6"> 6</option>
-                    <option value="7"> 7</option>
-                    <option value="8"> 8</option>
-                    <option value="9"> 9</option>
-                    <option value="10"> 10</option>
-                    <option value="11"> 11</option>
-                    <option value="12"> 12</option>
-                    <option value="13"> 13</option>
-                    <option value="14"> 14</option>
-                    <option value="15"> 15</option>
-                    <option value="16"> 16</option>
-                    <option value="17"> 17</option>
-                    <option value="18"> 18</option>
-                    <option value="19"> 19</option>
-                    <option value="20"> 20</option>
-                    <option value="21"> 21</option>
-                    <option value="22"> 22</option>
-                    <option value="23"> 23</option>
-                    <option value="24"> 24</option>
-                    <option value="25"> 25</option>
-                    <option value="26"> 26</option>
-                    <option value="27"> 27</option>
-                    <option value="28"> 28</option>
-                    <option value="29"> 29</option>
-                    <option value="30"> 30</option>
-                    <option value="31"> 31</option>
-                </select><br>
-                <label for="month-choice">Mois</label>
-                <select id="month-choice">
-                    <option value="1"> Janvier</option>
-                    <option value="2"> Février</option>
-                    <option value="3"> Mars</option>
-                    <option value="4"> Avril</option>
-                    <option value="5"> Mai</option>
-                    <option value="6"> Juin</option>
-                    <option value="7"> Juillet</option>
-                    <option value="8"> Août</option>
-                    <option value="9"> Septembre</option>
-                    <option value="10"> Octobre</option>
-                    <option value="11"> Novembre</option>
-                    <option value="12"> Décembre</option>
+                    <option value="1"> Lundi 22 Mars</option>
+                    <option value="2"> Mardi 23 Mars</option>
+                    <option value="3"> Mercredi 24 Mars</option>
+                    <option value="4"> Jeudi 25 Mars</option>
+                    <option value="5"> Vendredi 25 Mars</option>
+                    <option value="6"> Samedi 26 Mars</option>
+                    <option value="7"> Dimanche 27 Mars</option>
+                    <option value="8"> Lundi 28 Mars</option>
+                    <option value="9"> Mardi 29 Mars</option>
+                    <option value="10"> Mercredi 30 Mars</option>
+                    <option value="11"> Jeudi 31 Mars</option>
+                    <option value="12"> Vendredi 1er Avril</option>
+                    <option value="13"> Samedi 2 Avril</option>
+                    <option value="14"> Dimanche 3 Avril</option>
                 </select><br>
                 <label for="slot-choice">Heure</label>
                 <select id="slot-choice">
@@ -230,7 +188,7 @@
         </fieldset>
         </div>
         <div class="bouton-booking">
-                <input type="submit" value="Valider"/>  
+                <input type="submit" value="Valider" id="valid-button1"/>  
         </div>
     </section>
 
@@ -310,14 +268,15 @@
             <legend>Formulaire de contact</legend> 
                 <label for="name">Nom Prénom</label>
                 <input id="nom" placeholder="Dupont Michel" required=""><br>
+                <span id="missNomPrenom"></span><br>
                 <label for="email">E-mail</label>
-                <input id="email" type="email" placeholder="michel.dupont@gmail.com"><br>
+                <input id="email" type="email" placeholder="michel.dupont@gmail.com" required=""><br>
                 <label for="message">Message</label>
-                <textarea id="message" placeholder="Tapez votre message ici..."></textarea>
+                <textarea id="message" placeholder="Tapez votre message ici..." required=""></textarea>
         </fieldset>
         </div>  
         <div class="bouton-form">
-            <input type="submit" value="Soumettre">
+            <input type="submit" value="Soumettre" id="valid-button2"/>
         </div>
     </section>
 
