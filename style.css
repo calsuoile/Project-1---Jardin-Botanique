@@ -17,7 +17,7 @@ body {
 
 /*partie header*/
 /* id = # , class = . */
-#logo{
+#logo {
   padding: 0 70px;
 }
 
@@ -150,36 +150,38 @@ nav li a:hover {
 /* presentation */
 .contener {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
   background-color: #d2f5e3;
+  margin: 20px;
 }
 
-.element-1 {
+.contener-box1 {
   width: 40%;
-  margin: 10px 0 10px 30px;
+  margin: 20px;
 }
 
-.contener2 {
+.contener-box1 img {
+  width: 100%;
+}
+
+.contener-box2 {
   display: flex;
   flex-direction: column;
   width: 50%;
   margin-right: 30px;
-  height: 100%;
   justify-content: space-between;
 }
 
-.element-2 {
-  font-size: 20px;
+.contener-box2-element-1 {
+  font-size: 1.5rem;
   text-align: justify;
-  border: 1px solid orange;
   line-height: 1.8;
   letter-spacing: 1.5px;
+  margin: 15px;
 }
 
-.element-3 {
-  background-color: #0da;
-  border: 2px solid green;
+.contener-box2-element-2 {
+  background-color: #94b4a4;
   font-size: 50px;
   font-style: italic;
   margin: 15px;
@@ -190,6 +192,12 @@ nav li a:hover {
 /* responsive presentation */
 
 @media screen and (max-width: 600px) {
+  
+  body {
+    width:100%;
+  }
+  
+  
   .contener {
     flex-direction: column;
   }
@@ -210,51 +218,68 @@ nav li a:hover {
     width: 100%;
   }
 }
-/* ------------------------ */
 
-/* footer */
-
-.fourth-content-element {
-  display: flex;
-  border-top: 2px solid black;
-  margin-top: 20px;
-  padding-top: 20px;
+/*activities*/
+.activities {
+  text-align: center;
 }
 
-.fourth-content-element .fourth-content-element-item {
+.article {
   display: flex;
+  margin-top: 30px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(12, 215, 114, 0.7);
+  display: none;
+  border: transparent;
+  border-radius: 30px;
+  width: 70%;
+}
+
+button:hover{
+  color:  #5fa884;
+  transform: scale(1.5);
+}
+
+.closeActivities {
+  padding: 10px 20px;
+  background: #94b4a4;
+  color: #fff;
+  border: transparent;
+  border-radius: 40px;
+  font-size: 1.7rem;
+  width: 120px;
+}
+
+.openActivities {
+  padding: 10px 20px;
+  background:  #94b4a4;
+  color: #fff;
+  border: transparent;
+  border-radius: 40px;
+  font-size: 1.7rem;
+  width: 200px;
+  height: 85px;
+}
+
+#whatToDo {
+  align-items: baseline;
+  display: flex;
+  flex-flow: row, wrap;
   justify-content: space-around;
+  margin-top: 40px;
 }
-
-.fourth-content-element-item {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  max-width: 40rem;
-  max-height: 30rem;
-  overflow: hidden;
-  background-color: lightgoldenrodyellow;
-}
-
-.fourth-content-element-item img {
-  border-radius: 2rem 0 0 2rem;
-  min-height: 30rem;
-  min-width: 20rem;
-}
-
-.fourth-content-element-item-group {
-  padding: 1rem;
-  width: 20rem;
-  margin: auto;
-}
-
+/*activities*/
 
 /* début mise en forme formulaire booking */
-.booking, .form{
-    margin: 10px;
+.booking, .form {
+  margin: 10px;
 }
+
 hr {
-    border-color: #d2f5e3;
+  border-color: #d2f5e3;
 }
 
 fieldset {
@@ -265,20 +290,22 @@ fieldset {
 }
 
 .reservation {
-    display: flex;
+  display: flex;
 }
+
 .formulaire {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
+
 .bouton-booking {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .bouton-form {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 legend {
@@ -322,33 +349,42 @@ input[type=submit] {
   border-radius: 3px;
 }
 
-input[type=reset] {
-  width: 100px;
-  padding: 10px;
-  margin-left: 4px;
-  background-color:#94b4a4;
-  color: #fff;
-  border-width: thin;
-  box-shadow: 1px 1px 0 #0DA;
-  border-radius: 3px;
-}
-
-
 /* fin mise en forme formulaire booking */
-.fourth-content-element-item figure {
-  flex-direction: column;
+
+/* team */
+.team-content-element {
+  display: flex;
+  border: 1px solid black;
+  padding: 20px;
 }
 
-.fourth-content-element-item figure figcaption {
+.team-content-element-item {
+  display: flex;
+  text-align: center;
+  margin: auto;
+  max-width: 40rem;
+  max-height: 30rem;
+  background-color: #94b4a4;
+  border-radius:  2rem 2rem;
+}
+
+.team-content-element-item img {
+  border-radius: 2rem 0 0 2rem;
+  min-height: 10rem;
+}
+
+.team-content-element-item-group {
+  padding: 1rem;
+  width: 20rem;
+  margin: auto;
+}
+
+.team-content-element-item figure figcaption {
   padding: 4rem 0;
 }
 
-.fourth-content-element-name {
+.team-content-element-name {
   margin-top: 2rem;
-  text-align: center;
 }
 
-.fourth-content-element-name-title {
-
-}
-
+/* fin team */
