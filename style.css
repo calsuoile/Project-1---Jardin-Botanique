@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
 
 body {
   /*la base de css (apparemment) */
@@ -11,15 +7,14 @@ body {
   hyphens: auto;
 }
 
-.bloc {
-  display: flex;
-}
 
 /*partie header*/
 /* id = # , class = . */
 #logo {
   padding: 0 70px;
 }
+
+
 
 h1 {
   width: auto;
@@ -33,6 +28,10 @@ h1 {
   position: relative;
   text-align: center;}
 
+.boximgheader img {
+  width: 100%;
+}
+
 .bienvenue {
   background-color: rgb(205, 248, 196);
   opacity: 0.9;
@@ -43,22 +42,19 @@ h1 {
   transform: translate(50%,50%);
 }
 
-#menuweb{
-
-  position: fixed;
-  z-index: 9999;
-  left: -25%;
-  top: auto;
+nav{
   background: #d2f5e3;
-  padding: 4em 2em;
-  width: 25%;
-  min-height: 100%;
-  box-shadow: 1px 0 1px #d2f5e3;
+  display: flex;
+}
+
+nav.fixed {
+  position: fixed;
+  top: 0;
 }
 
 nav li {
   list-style: none;
-  display: inline-block;
+  width: 100%;
 }
 
 nav li a {
@@ -68,21 +64,14 @@ nav li a {
   text-align: center;
   box-shadow: 1px 1px 0 #0da;
   color: black;
+  
 }
 
 nav li a:hover {
   background: #0DA;
 }
 
-/* menuburger*/
 
-#menuburger .bar1, #menuburger .bar2, #menuburger .bar3 {
-  width:32px; 
-  height:5px; 
-  background-color:#94b4a4; 
-  margin:6px 0; 
-  transition:0.4s; ;
-}
 
 
 /*activities*/
@@ -149,6 +138,10 @@ nav li a:hover {
 /*activities*/
 
 /* presentation */
+.bloc {
+  margin: 100px 0 100px 0;
+}
+
 .contener {
   display: flex;
   justify-content: space-around;
@@ -190,39 +183,9 @@ nav li a:hover {
   box-sizing: content-box;
 }
 
-/* responsive presentation */
-
-@media screen and (max-width: 600px) {
-  
-  body {
-    width:100%;
-  }
-  
-  
-  .contener {
-    flex-direction: column;
-  }
-  
-  .element-1 {
-    display: block;
-  }
-
-  .contener2 {
-    width: 100%;
-  }
-  .element-2 {
-    display: block;
-    width: 100%;
-  }
-  .element-3 {
-    display: block;
-    width: 100%;
-  }
-}/
-
 /* début mise en forme formulaire booking */
 .booking, .form {
-  margin: 10px;
+  margin: 50px 10px 50px 10px;
 }
 
 hr {
@@ -307,7 +270,6 @@ input[type=submit]:hover {
 /* team */
 .team-content-element {
   display: flex;
-  border: 1px solid black;
   padding: 20px;
 }
 
