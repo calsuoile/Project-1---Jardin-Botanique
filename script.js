@@ -16,7 +16,7 @@ for (let i = 0; i < closeActivities.length; i ++){
 )}
 
 //Début pop up bouton valider réservation//
-const validationButton = document.querySelector(".bouton-booking")
+const validationButton = document.getElementById("valid-button1");
 const bookingDone = "Votre réservation a bien été prise en compte.";
 validationButton.addEventListener('click', function(){
     alert(bookingDone);
@@ -24,11 +24,26 @@ validationButton.addEventListener('click', function(){
 //Fin pop up bouton valider réservation//
 
 //Début pop up bouton soumettre formulaire//
-const validationForm = document.querySelector(".bouton-form")
+const validationForm = document.getElementById("valid-button2");
 const formSent = "Votre message a bien été envoyé.";
 validationForm.addEventListener('click', function(){
     alert(formSent);
 });
 //Fin pop up bouton soumettre formulaire//
 
+//Début Alerte champs vide//
+const formValid = document.getElementById("valid-button2");
+const nomPrenom = document.getElementById("nom");
+const missNomPrenom = document.getElementById("missNomPrenom");
 
+formValid.addEventListener('click', validation);
+
+function validation(event){
+    if (nomPrenom.validity.valueMissing){
+        event.preventDefault();
+        missNomPrenom.textContent = "Champs non renseigné";
+        missNomPrenom.style.color = "red";
+    }else {
+        alert(formSent);
+    }
+}
