@@ -32,3 +32,12 @@ validationForm.addEventListener('click', function(){
 //Fin pop up bouton soumettre formulaire//
 
 
+
+
+
+
+<div id="menuburger">
+<div class="bar1"></div>
+<div class="bar2"></div>
+<div class="bar3"></div>
+</div>
