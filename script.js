@@ -36,6 +36,15 @@ const formValid = document.getElementById("valid-button2");
 const nomPrenom = document.getElementById("nom");
 const missNomPrenom = document.getElementById("missNomPrenom");
 
+
+
+
+
+<div id="menuburger">
+<div class="bar1"></div>
+<div class="bar2"></div>
+<div class="bar3"></div>
+</div>
 formValid.addEventListener('click', validation);
 
 function validation(event){
