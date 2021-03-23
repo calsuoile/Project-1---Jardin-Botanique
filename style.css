@@ -234,6 +234,8 @@ fieldset {
   padding: 10px; 
   width: 50%;
   border-color: #94b4a4;
+  margin: 2px;
+
 }
 
 .reservation {
@@ -293,7 +295,11 @@ input[type=submit] {
   color: #fff;
   border-width: thin;
   box-shadow: 1px 1px 0 #0DA;
-  border-radius: 3px;
+  border-radius: 3px;  
+}
+
+input[type=submit]:hover {
+  background: #0DA;
 }
 
 /* fin mise en forme formulaire booking */
