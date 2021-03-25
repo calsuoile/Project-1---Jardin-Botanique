@@ -43,13 +43,6 @@ nav {
   background: #d2f5e3;
   display: flex;
 }
-<<<<<<< HEAD
-=======
-nav.sticky {
-  position: sticky;
-  top: 0%;
-}
->>>>>>> origin/dev
 
 nav li {
   list-style: none;
