@@ -43,6 +43,7 @@ nav.sticky {
   position: sticky;
   top: 0%;
 }
+
 nav li {
   list-style: none;
   width: 100%;
@@ -68,7 +69,6 @@ nav li a:hover {
 }
 
 /*activities*/
-
 .activities {
   text-align: center;
 }
@@ -254,6 +254,7 @@ label {
   vertical-align: top;
   margin: 6px;
 }
+
 select {
   height: 22px;
   border: thin;
@@ -262,6 +263,11 @@ select {
 
 input:focus {
   background: #eaeaea;
+}
+
+input,
+textarea {
+  width: 249px;
 }
 
 input,
