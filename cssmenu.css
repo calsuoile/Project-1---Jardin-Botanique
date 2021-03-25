@@ -1,0 +1,86 @@
+body {
+    /*la base de css (apparemment) */
+    padding: 0;
+    margin: 0;
+    background-color: #d2f5e3;
+    hyphens: auto;
+}
+
+
+
+/*header*/
+/*ok ne plus toucher*/
+h1 {
+    width: auto;
+    height: auto;
+    text-align: center;
+    color: rgb(16, 39, 20);
+    font-style: italic;
+}
+
+.boximgheader {
+    text-align: center;
+}
+
+.boximgheader img {
+    width: 100%;
+    height: 300px;
+}
+
+.bienvenue {
+    background-color: rgb(205, 248, 196, .6);
+    opacity: 0.9;
+    position: absolute;
+    top: 40px;
+    left: 70px;
+    right: 70px;
+    bottom: auto;
+}
+
+/* menu web*/
+.menu{
+    display: inline-flexbox;
+}
+nav {
+    background: #d2f5e3;
+    width: 100%;
+    margin-top: 30px;
+}
+
+ul li {
+    list-style: none;
+    width: 100%;
+}
+nav ul li {
+    display: inline-flexbox;
+    float: left;
+    width: 100%;
+}
+li a {
+    display:block;
+    background: #94b4a4;
+    padding: 2%;
+    text-align: center;
+    box-shadow: 1px 1px 0 #0da;
+    color: rgb(3, 19, 5);
+}
+
+nav li a:hover {
+    background: #0DA;
+}
+
+/*menu burger*/
+.burger {
+    color: sienna;
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px){
+    .menu{
+        flex-direction: row;
+    }.burger{
+        display: block;
+        position: sticky;
+    }
+}
