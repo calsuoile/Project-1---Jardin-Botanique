@@ -135,11 +135,11 @@ nav li a:hover {
 }
 
 #whatToDo {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
   margin-top: 40px;
   margin-bottom: 40px;
-  display: flex;
-  flex-direction: row wrap;
-  justify-content: space-around;
 }
 
 #go-activities {
@@ -152,46 +152,46 @@ nav li a:hover {
 
 .contener {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  background-color: #d2f5e3;
-  margin: 20px;
+  align-items: center;
 }
 
-.contener-box1 {
-  width: 40%;
-  margin: 20px;
-}
-
-.contener-box1 img {
-  width: 100%;
-}
-
-.contener-box2 {
+.element-1 {
+  width: 30%;
   display: flex;
-  flex-direction: column;
-  width: 50%;
-  margin-right: 30px;
-  justify-content: space-between;
+  justify-content: center;
 }
 
-.contener-box2-element-1 {
+.element-1 img {
+  width: 90%;
+  height: auto;
+}
+
+.element-2 {
+  width: 35%;
   font-size: 1.5rem;
   text-align: justify;
-  line-height: 1.8;
-  letter-spacing: 1.5px;
-  margin: 15px;
+  line-height: 2.5rem;
 }
 
-.contener-box2-element-2 {
-  background-color: #94b4a4;
-  font-size: 50px;
-  font-style: italic;
-  margin: 15px;
+.contener2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  box-sizing: content-box;
 }
 
-/* début mise en forme formulaire & booking */
+.element-3 {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.element-4 {
+  height: 100%;
+}
+
+/* début mise en forme formulaire booking */
 .booking,
 .form {
   margin: 50px 10px 50px 10px;
@@ -310,22 +310,23 @@ input[type="submit"]:hover {
 
 .team-content-element {
   display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
   padding: 20px;
 }
 
 .team-content-element-item {
-  display: flex;
   text-align: center;
-  margin: auto;
-  max-width: 30rem;
-  max-height: 20rem;
+  margin: 15px;
   background-color: #94b4a4;
   border-radius: 2rem 2rem;
+  list-style-type: none;
 }
 
 .team-content-element-item img {
-  border-radius: 2rem 0 0 2rem;
-  min-height: 10rem;
+  border-radius: 10rem;
+  height: 25%;
+  margin-top: 2rem;
 }
 
 .team-content-element-item-group {
@@ -334,12 +335,8 @@ input[type="submit"]:hover {
   margin: auto;
 }
 
-.team-content-element-item figure figcaption {
-  padding: 4rem 0;
-}
-
-.team-content-element-name {
-  margin-top: 2rem;
+audio {
+  width: 100%;
 }
 
 /*footer*/

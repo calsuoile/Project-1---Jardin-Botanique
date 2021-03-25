@@ -18,28 +18,13 @@
 
 /* responsive presentation */
 
-@media screen and (max-width: 600px) {
-  body {
-    width: 100%;
-  }
-
-  .contener {
-    flex-direction: column;
-  }
-
+@media screen and (max-width: 1500px) {
+  
   .element-1 {
-    display: block;
+    display: none;
   }
 
-  .contener2 {
-    width: 100%;
-  }
   .element-2 {
-    display: block;
-    width: 100%;
+    width: 80%;
   }
-  .element-3 {
-    display: block;
-    width: 100%;
   }
-}
