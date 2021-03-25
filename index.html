@@ -8,57 +8,50 @@
     <title>Jardin Botanique Bastide</title>
     <link href="style.css" rel="stylesheet" type="text/css">
     <link href="style2.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/28f544aa00.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <div class="boximgheader"><img
-                src="https://www.bwhotelcappellodoro-bg.it/resources/images/7cca6cce-003f-43a8-af0a-560eb2f82795/fr/FWB/eco-friendly-bergamo.jpg">
+        <div class="boximgheader"><img src="https://www.bwhotelcappellodoro-bg.it/resources/images/7cca6cce-003f-43a8-af0a-560eb2f82795/fr/FWB/eco-friendly-bergamo.jpg">
         </div>
         <div class="bienvenue">
-            <h1>Bienvenue au <img src="assets/images/logo-jb.bmp" id="logo"> de Bordeaux</h1>
+            <h1>Bienvenue au <br> <img src="assets/images/logo-jb.bmp" id="logo"> <br>de Bordeaux</h1>
         </div>
-
-
-        <nav class="menuweb">
-            <li><a href=".contener">Présentation</a></li>
+        <div id="burger" class="burger">
+        _____<br>
+        _____<br>
+        _____<br>
+        </div>
+        <nav class="menuweb" id="navbar">
+            <li><a href="#prez">Présentation</a></li>
             <li><a href="#whatToDo">Activités</a></li>
-            <li><a href=".booking">Réservations</a></li>
-            <li><a href=".contactForm">Contact</a></li>
-            <li><a href=".img">Info+</a></li>
+            <li><a href="#resa">Réservations</a></li>
+            <li><a href="#equip">Notre équipe</a></li>
+            <li><a href="#formID">Contact</a></li>
         </nav>
     </header>
 
     <div class="bloc">
         <h2>Le jardin</h2>
         <hr/>
-        <section class="contener">
+        <section class="contener" id="prez">
             <a class="contener-box1" href="http://jardin-botanique-bordeaux.fr/sites/jardin-botanique-bordeaux.fr/files/upload/plan3.jpg" target="_blank"><img  src="assets/images/image_jardin_botanique.png" alt="" title=Cliquez pour agrandir" /></a>
 
             <div class="contener-box2">
-                <p class="contener-box2-element-1">Historique: Le Jardin botanique de Bordeaux est créé en 1629, sous le nom de «
-                    Jardin des Plantes »
-                    Cet Hortus Medicus (jardin médicinal) n'est autre qu'un jardin des simples issu de la tradition
-                    médiévale :
-                    un jardin de plantes médicinales, condimentaires et aromatiques. Il va déménager quatre fois. En
-                    1750, il
-                    se retrouve rue du jardin des plantes, à laquelle il donne son nom. En 1784, la vocation portuaire
-                    de Bordeaux,
-                    il devient centre acclimatation de plantes tropicales du monde entier. Au xixe siècle, il devient
-                    jardin botanique.
-                    Enfin en 1856, il s'installe dans le Jardin public de Bordeaux, profitant de vastes serres qui
-                    seront détruites en 1931.
-                    En 2001, le nouveau jardin est créé sur la rive droite de la Garonne, une première en France depuis
-                    25 ans.
-                    Il obtiendra le prix européen de Paysage Rosa Barba 2003, et le prix Bâtiment culturel 2007-2008,
-                    (concours "Habitat Solaire, Habitat d'Aujourd'hui"). Il a également été exposé en 2005 au Museum of
-                    Modern Art de New-York, qui venait de rouvrir.
+                <p class="contener-box2-element-1">Historique: Le Jardin botanique de Bordeaux est créé en 1629, sous le nom de « Jardin des Plantes » Cet Hortus Medicus (jardin médicinal) n'est autre qu'un jardin des simples issu de la tradition médiévale : un jardin de plantes médicinales,
+                    condimentaires et aromatiques. Il va déménager quatre fois. En 1750, il se retrouve rue du jardin des plantes, à laquelle il donne son nom. En 1784, la vocation portuaire de Bordeaux, il devient centre acclimatation de plantes tropicales
+                    du monde entier. Au xixe siècle, il devient jardin botanique. Enfin en 1856, il s'installe dans le Jardin public de Bordeaux, profitant de vastes serres qui seront détruites en 1931. En 2001, le nouveau jardin est créé sur la rive
+                    droite de la Garonne, une première en France depuis 25 ans. Il obtiendra le prix européen de Paysage Rosa Barba 2003, et le prix Bâtiment culturel 2007-2008, (concours "Habitat Solaire, Habitat d'Aujourd'hui"). Il a également été exposé
+                    en 2005 au Museum of Modern Art de New-York, qui venait de rouvrir.
                 </p>
-                <p class="contener-box2-element-2">Entrée gratuite pour les animaux </br> si accompagné par des humains tenus en laisse</p>
+                <p class="contener-box2-element-2">Entrée gratuite pour les animaux </br> si accompagnés par des humains tenus en laisse</p>
             </div>
         </section>
     </div>
         
+        
+    <section id="go-activities">
         <h2>Les activités</h2>
         <hr/>
     <section id="whatToDo">
@@ -128,22 +121,23 @@
         </article>
     </section>
 
-    <section class="booking">
+    <section class="booking" id="resa">
         <h2 class="title-booking">Formulaire de réservation</h2>
         <hr />
+        <p class="contact-sentence">Pour réserver une activité, merci de bien vouloir remplir le formulaire ci-dessous.</p>
         <div class="reservation">
         <fieldset>
             <legend> Informations personnelles</legend>
-                <label for="sexe">Sexe</label>
+                <label for="sexe">Sexe :</label>
                 <select id="sexe">
                     <option value="H" name="sexe" checked="checked"> Homme
                     <option value="F" name="sexe"> Femme
                 </select><br>
-                <label for="name">Nom Prénom</label>
-                <input id="nom" placeholder="Dupont Michel" required=""><br>
-                <label for="age" >Age</label>
-                <input id="age" type="number" placeholder="xx" step="0,1" min="0" max="99" required=""><br>
-                <label for="astro-signs">Signe astrologique</label>
+                <label for="name">Nom Prénom :</label>
+                <input id="nom1" placeholder="Dupont Michel" required=""><br>
+                <label for="age" >Age :</label>
+                <input id="age" type="number" placeholder="Age minimum 16 ans" step="0,1" min="16" max="99" required=""><br>
+                <label for="astro-signs">Signe<br>astrologique :</label>
                 <select id="astro-signs">
                     <option value="vide"> </option>
                     <option value="bélier"> Bélier</option>
@@ -159,7 +153,7 @@
                     <option value="verseau"> Verseau</option>
                     <option value="poissons"> Poissons</option>
                 </select><br>
-                <label for="revenu">Revenu fiscal</label>
+                <label for="revenu">Revenu fiscal :</label>
                 <select id="revenu">
                     <option value="premier" checked="checked"> De 10K€ à 25K€</option>
                     <option value="deuxième"> De 25K€ à 75K€</option>
@@ -168,8 +162,8 @@
                 </select><br>        
         </fieldset>
         <fieldset>
-            <legend>Réservation activité</legend>
-                <label for="activity-choice">Activité</label>
+            <legend>Choix de l'activité</legend>
+                <label for="activity-choice">Activité :</label>
                 <select id="activity-choice">
                     <option value="vide"> </option>
                     <option value="speedbot"> Speed Botanique</option>
@@ -177,9 +171,9 @@
                     <option value="apnee"> Hors du temps</option>
                     <option value="froghunt"> Chasse aux grenouilles</option>
                 </select><br>   
-                <label for="person-number">Nombre de personnes</label>
+                <label for="person-number">Nombre de<br>personnes :</label>
                 <input id="person-number" type="number" step="0,1" min="1" max="6" placeholder="Min 1 pers. - max 6 pers." required=""><br>
-                <label for="date-choice">Date</label>
+                <label for="date-choice">Date :</label>
                 <select id="date-choice">
                     <option value="1"> Lundi 22 Mars</option>
                     <option value="2"> Mardi 23 Mars</option>
@@ -196,7 +190,7 @@
                     <option value="13"> Samedi 2 Avril</option>
                     <option value="14"> Dimanche 3 Avril</option>
                 </select><br>
-                <label for="slot-choice">Heure</label>
+                <label for="slot-choice">Heure :</label>
                 <select id="slot-choice">
                     <option value="slot1"> 8h - 10h</option>
                     <option value="slot2"> 10h - 12h</option>
@@ -204,16 +198,16 @@
                     <option value="slot4"> 14h - 16h</option>
                     <option value="slot5"> 16h - 18h</option>
                     <option value="slot6"> 18h - 20h</option>    
-                </select><br>        
-        </fieldset>
+                </select><br>
+            </fieldset>
         </div>
         <div class="bouton-booking">
-                <input type="submit" value="Valider" id="valid-button1"/>  
+            <input type="submit" value="Valider" id="valid-button1" />
         </div>
     </section>
 
-    <section>
-        <h2>L'équipe des bras cassés</h2>
+    <section class="the-team" id="equip">
+        <h2>L'équipe du Jardin Botanique</h2>
         <hr/>
         <ul class="team-content-element">
 
@@ -280,23 +274,24 @@
         </ul>
     </section>
 
-    <section class="form">
+    <section class="form" id="formID" >
         <h2 class="title-form">Contact</h2>
         <hr />
+        <p class="contact-sentence">Pour nous contacter, merci de bien vouloir remplir le formulaire ci-dessous.</p>
         <div class="formulaire">
         <fieldset>
             <legend>Formulaire de contact</legend> 
-                <label for="name">Nom Prénom</label>
-                <input id="nom" placeholder="Dupont Michel" required=""><br>
+                <label for="name">Nom Prénom :</label>
+                <input id="nom" name="name" placeholder="Dupont Michel" required="">
                 <span id="missNomPrenom"></span><br>
-                <label for="email">E-mail</label>
-                <input id="email" type="email" placeholder="michel.dupont@gmail.com" required=""><br>
-                <label for="message">Message</label>
-                <textarea id="message" placeholder="Tapez votre message ici..." required=""></textarea>
+                <label for="email">E-mail :</label>
+                <input id="email" name="name" type="email" placeholder="michel.dupont@gmail.com" required=""><br>
+                <label for="message">Message :</label>
+                <textarea id="message" name="name" placeholder="Tapez votre message ici..." required=""></textarea>
         </fieldset>
         </div>  
         <div class="bouton-form">
-            <input type="submit" value="Soumettre" id="valid-button2"/>
+            <input type="submit" value="Envoyer" id="valid-button2"/>
         </div>
     </section>
 
