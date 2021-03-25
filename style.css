@@ -123,12 +123,17 @@ nav li a:hover {
 }
 
 #whatToDo {
-    align-items: baseline;
-    display: flex;
-    flex-flow: row, wrap;
-    justify-content: space-around;
-    margin-top: 40px;
-    margin-bottom: 40px;
+  align-items: baseline;
+  display: flex;
+  flex-flow: row, wrap;
+  justify-content: space-around;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  
+}
+
+#go-activities {
+  margin: 50px 10px 50px 10px;
 }
 
 
@@ -136,10 +141,6 @@ nav li a:hover {
 
 
 /* presentation */
-
-.bloc {
-    margin: 100px 0 100px 0;
-}
 
 .contener {
     display: flex;
@@ -182,33 +183,43 @@ nav li a:hover {
     box-sizing: content-box;
 }
 
-
-/* début mise en forme formulaire booking */
-
-.booking,
-.form {
-    margin: 50px 10px 50px 10px;
+/* début mise en forme formulaire & booking */
+.booking, .form {
+  margin: 50px 10px 50px 10px;
 }
 
 hr {
     border-color: #d2f5e3;
 }
 
+.contact-sentence {
+  text-align: center;
+  font-style: italic;
+  font-size: large;
+}
+
 fieldset {
     margin-bottom: 15px;
-    padding: 10px;
-    width: 50%;
+    padding: 10px; 
+    width: 40%;
     border-color: #94b4a4;
     margin: 2px;
+    border-radius: 10px;
 }
 
 .reservation {
-    display: flex;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
 }
 
 .formulaire {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
 }
 
 .bouton-booking {
@@ -222,24 +233,38 @@ fieldset {
 }
 
 legend {
-    padding: 0px 3px;
-    font-weight: bold;
-    font-variant: small-caps;
+  padding: 0px 3px;
+  font-weight: bold;
+  font-size: large;
+  font-variant: small-caps;
 }
 
 label {
-    width: 110px;
-    display: inline-block;
-    vertical-align: top;
-    margin: 6px;
+  width: 110px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 6px;
+
+}
+select {
+  height: 22px;
+  border: thin;
+  border-radius: 4px;
+
 }
 
 input:focus {
     background: #eaeaea;
 }
+ 
+input, textarea {
+  width: 249px;
+  border-radius: 4px;
+  height: 22px;
+  border: thin;
+}
 
-input,
-textarea {
+input, textarea {
     width: 249px;
 }
 
@@ -252,24 +277,29 @@ select {
 }
 
 input[type=submit] {
-    width: 100px;
-    padding: 10px;
-    background-color: #94b4a4;
-    color: #fff;
-    border-width: thin;
-    box-shadow: 1px 1px 0 #0DA;
-    border-radius: 3px;
+  width: 100px;
+  padding: 10px;
+  background-color:#94b4a4;
+  color: #fff;
+  border-width: thin;
+  box-shadow: 1px 1px 0 #0DA;
+  border-radius: 3px; 
+  height: 40px; 
 }
 
 input[type=submit]:hover {
     background: #0DA;
 }
 
+/* fin mise en forme formulaire & booking */
 
-/* fin mise en forme formulaire booking */
 
 
 /* team */
+
+.the-team {
+  margin: 50px 10px 50px 10px;
+}
 
 .team-content-element {
     display: flex;
@@ -277,13 +307,14 @@ input[type=submit]:hover {
 }
 
 .team-content-element-item {
-    display: flex;
-    text-align: center;
-    margin: auto;
-    max-width: 40rem;
-    max-height: 30rem;
-    background-color: #94b4a4;
-    border-radius: 2rem 2rem;
+  display: flex;
+  text-align: center;
+  margin: auto;
+  max-width: 30rem;
+  max-height: 20rem;
+  background-color: #94b4a4;
+  border-radius:  2rem 2rem;
+
 }
 
 .team-content-element-item img {

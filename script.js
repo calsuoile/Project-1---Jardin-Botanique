@@ -30,10 +30,23 @@ validationForm.addEventListener('click', function() {
 });
 //Fin pop up bouton soumettre formulaire//
 
-//Début Alerte champs vide//
-const formValid = document.getElementById("valid-button2");
-const nomPrenom = document.getElementById("nom");
-const missNomPrenom = document.getElementById("missNomPrenom");
+//Début Alerte champs vide formulaire contact//
+//const formValid = document.getElementById("valid-button2");
+//const nomPrenom = document.getElementById("nom");
+//const missNomPrenom = document.getElementById("missNomPrenom");
+//const formSent = "Votre message a bien été envoyé.";
+
+//formValid.addEventListener('click', validation);
+
+//function validation(event){
+    //if (nomPrenom.validity.valueMissing){
+        //event.preventDefault();
+        //missNomPrenom.innerHTML = "Champs non renseigné";
+        //missNomPrenom.style.color = "red";
+    //}else {
+       //alert(formSent)
+    //}
+//}
 
 formValid.addEventListener('click', validation);
 
@@ -53,3 +66,4 @@ const navBar = document.querySelector('.menuweb');
 burgerMenu.addEventListener('click',() => {
     navbar.classList.toggle('display-block')
 })
+
