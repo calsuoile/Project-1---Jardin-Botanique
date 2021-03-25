@@ -108,3 +108,8 @@ const navBar = document.querySelector(".menuweb");
 burgerMenu.addEventListener("click", () => {
   navbar.classList.toggle("display-block");
 });
+
+
+
+
+const nav =document.getElementById("navbar");
