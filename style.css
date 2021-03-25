@@ -1,195 +1,204 @@
 body {
-    /*la base de css (apparemment) */
-    padding: 0;
-    margin: 0;
-    background-color: #d2f5e3;
-    hyphens: auto;
+  /*la base de css (apparemment) */
+  padding: 0;
+  margin: 0;
+  background-color: #d2f5e3;
+  hyphens: auto;
 }
-
 
 /*header*/
 
 h1 {
-    width: auto;
-    height: auto;
-    text-align: center;
-    color: rgb(16, 39, 20);
-    font-style: italic;
+  width: auto;
+  height: auto;
+  text-align: center;
+  color: rgb(16, 39, 20);
+  font-style: italic;
 }
 
 .boximgheader {
-    text-align: center;
+  text-align: center;
 }
 
 .boximgheader img {
-    width: 100%;
-    height: 300px;
+  width: 100%;
+  height: 300px;
 }
 
 .bienvenue {
-    background-color: rgb(205, 248, 196, .6);
-    opacity: 0.9;
-    position: absolute;
-    top: 40px;
-    left: 70px;
-    right: 70px;
-    bottom: auto;
+  background-color: rgb(205, 248, 196, 0.6);
+  opacity: 0.9;
+  position: absolute;
+  top: 40px;
+  left: 70px;
+  right: 70px;
+  bottom: auto;
 }
 /*menu web et burger*/
 nav {
-    background: #d2f5e3;
-    display: flex;
+  background: #d2f5e3;
+  display: flex;
 }
-nav.sticky{
-    position: sticky;
-    top: 0%;
+nav.sticky {
+  position: sticky;
+  top: 0%;
 }
 nav li {
-    list-style: none;
-    width: 100%;
+  list-style: none;
+  width: 100%;
 }
 
 nav li a {
-    display: block;
-    background: #94b4a4;
-    padding: 2em;
-    text-align: center;
-    box-shadow: 1px 1px 0 #0da;
-    color: black;
+  display: block;
+  background: #94b4a4;
+  padding: 2em;
+  text-align: center;
+  box-shadow: 1px 1px 0 #0da;
+  color: black;
 }
 
 nav li a:hover {
-    background: #0DA;
+  background: #0da;
 }
 /*menu burger*/
 .burger {
-    color: sienna;
-    display: none;
-    cursor: pointer;
+  color: sienna;
+  display: none;
+  cursor: pointer;
 }
 
 /*activities*/
 
 .activities {
-    text-align: center;
+  text-align: center;
 }
 
 .article {
-    display: flex;
-    margin-top: 20px;
-    margin-left: 25px;
-    padding: 20px 20px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #3eb98a;
-    display: none;
-    border: transparent;
-    border-radius: 30px;
-    width: 90%;
-    justify-content: space-between;
+  display: flex;
+  padding: 10px 10px;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: auto;
+  background-color: #3eb98a;
+  border: transparent;
+  border-radius: 30px;
 }
 
 .openActivities:hover {
-    background-color: #0DA;
-    transform: scale(1.5);
+  background-color: #0da;
+  transform: scale(1.15);
 }
 
 .closeActivities {
-    padding: 10px 20px;
-    background-color: #94b4a4;
-    color: #fff;
-    border: transparent;
-    border-radius: 40px;
-    font-size: 1.7rem;
-    width: 80px;
-    font-size: medium;
-    margin: 10px;
+  padding: 10px 20px;
+  background-color: #94b4a4;
+  color: #fff;
+  border: transparent;
+  border-radius: 40px;
+  font-size: 1.7rem;
+  width: 80px;
+  font-size: medium;
+  margin: 10px;
 }
 
 .openActivities {
-    padding: 10px 20px;
-    background-color: #94b4a4;
-    color: #fff;
-    border: transparent;
-    border-radius: 40px;
-    box-shadow: 10px 5px 5px rgb(80, 94, 88);
-    font-size: 1.7rem;
-    width: 200px;
-    height: 85px;
-    margin-top: 40px;
-    margin-bottom: 50px;
+  background-color: #94b4a4;
+  color: #fff;
+  border-width: thin;
+  box-shadow: 1px 1px 0 #0da;
+  border-radius: 3px;
+  font-size: 1.7rem;
+  width: 250px;
+  height: 50px;
+  margin-top: 20px;
+}
+
+.cards {
+  background-color: #94b4a4;
+  color: #fff;
+  border: transparent;
+  border-radius: 40px;
+  box-shadow: 10px 5px 5px rgb(80, 94, 88);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 300px;
+  height: 460px;
+}
+
+.cards img {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 40px 40px 0 0;
+  height: 350px;
 }
 
 #whatToDo {
-  align-items: baseline;
-  display: flex;
-  flex-flow: row, wrap;
-  justify-content: space-around;
   margin-top: 40px;
   margin-bottom: 40px;
-  
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: space-around;
 }
 
 #go-activities {
   margin: 50px 10px 50px 10px;
 }
 
-
 /*activities*/
-
 
 /* presentation */
 
 .contener {
-    display: flex;
-    justify-content: space-around;
-    background-color: #d2f5e3;
-    margin: 20px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #d2f5e3;
+  margin: 20px;
 }
 
 .contener-box1 {
-    width: 40%;
-    margin: 20px;
+  width: 40%;
+  margin: 20px;
 }
 
 .contener-box1 img {
-    width: 100%;
+  width: 100%;
 }
 
 .contener-box2 {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin-right: 30px;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-right: 30px;
+  justify-content: space-between;
 }
 
 .contener-box2-element-1 {
-    font-size: 1.5rem;
-    text-align: justify;
-    line-height: 1.8;
-    letter-spacing: 1.5px;
-    margin: 15px;
+  font-size: 1.5rem;
+  text-align: justify;
+  line-height: 1.8;
+  letter-spacing: 1.5px;
+  margin: 15px;
 }
 
 .contener-box2-element-2 {
-    background-color: #94b4a4;
-    font-size: 50px;
-    font-style: italic;
-    margin: 15px;
-    text-align: center;
-    box-sizing: content-box;
+  background-color: #94b4a4;
+  font-size: 50px;
+  font-style: italic;
+  margin: 15px;
+  text-align: center;
+  box-sizing: content-box;
 }
 
 /* début mise en forme formulaire & booking */
-.booking, .form {
+.booking,
+.form {
   margin: 50px 10px 50px 10px;
 }
 
 hr {
-    border-color: #d2f5e3;
+  border-color: #d2f5e3;
 }
 
 .contact-sentence {
@@ -199,12 +208,12 @@ hr {
 }
 
 fieldset {
-    margin-bottom: 15px;
-    padding: 10px; 
-    width: 40%;
-    border-color: #94b4a4;
-    margin: 2px;
-    border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 40%;
+  border-color: #94b4a4;
+  margin: 2px;
+  border-radius: 10px;
 }
 
 .reservation {
@@ -223,13 +232,13 @@ fieldset {
 }
 
 .bouton-booking {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .bouton-form {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 legend {
@@ -244,56 +253,54 @@ label {
   display: inline-block;
   vertical-align: top;
   margin: 6px;
-
 }
 select {
   height: 22px;
   border: thin;
   border-radius: 4px;
-
 }
 
 input:focus {
-    background: #eaeaea;
+  background: #eaeaea;
 }
- 
-input, textarea {
+
+input,
+textarea {
   width: 249px;
   border-radius: 4px;
   height: 22px;
   border: thin;
 }
 
-input, textarea {
-    width: 249px;
+input,
+textarea {
+  width: 249px;
 }
 
 textarea {
-    height: 100px;
+  height: 100px;
 }
 
 select {
-    width: 254px;
+  width: 254px;
 }
 
-input[type=submit] {
+input[type="submit"] {
   width: 100px;
   padding: 10px;
-  background-color:#94b4a4;
+  background-color: #94b4a4;
   color: #fff;
   border-width: thin;
-  box-shadow: 1px 1px 0 #0DA;
-  border-radius: 3px; 
-  height: 40px; 
+  box-shadow: 1px 1px 0 #0da;
+  border-radius: 3px;
+  height: 40px;
 }
 
-input[type=submit]:hover {
-    background: #0DA;
+input[type="submit"]:hover {
+  background: #0da;
 }
 
 /* fin mise en forme formulaire & booking */
-
-
 
 /* team */
 
@@ -302,8 +309,8 @@ input[type=submit]:hover {
 }
 
 .team-content-element {
-    display: flex;
-    padding: 20px;
+  display: flex;
+  padding: 20px;
 }
 
 .team-content-element-item {
@@ -313,28 +320,43 @@ input[type=submit]:hover {
   max-width: 30rem;
   max-height: 20rem;
   background-color: #94b4a4;
-  border-radius:  2rem 2rem;
-
+  border-radius: 2rem 2rem;
 }
 
 .team-content-element-item img {
-    border-radius: 2rem 0 0 2rem;
-    min-height: 10rem;
+  border-radius: 2rem 0 0 2rem;
+  min-height: 10rem;
 }
 
 .team-content-element-item-group {
-    padding: 1rem;
-    width: 20rem;
-    margin: auto;
+  padding: 1rem;
+  width: 20rem;
+  margin: auto;
 }
 
 .team-content-element-item figure figcaption {
-    padding: 4rem 0;
+  padding: 4rem 0;
 }
 
 .team-content-element-name {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
+/*footer*/
+.reseaux_sociaux {
+  list-style: none;
+  display: flex;
+  width: 350px;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+
+.copyright {
+  list-style: none;
+  margin-bottom: 40px;
+}
+
+/*fin de footer*/
 
 /* fin team */

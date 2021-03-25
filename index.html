@@ -54,52 +54,71 @@
     <section id="go-activities">
         <h2>Les activités</h2>
         <hr/>
-        <div id="whatToDo">
-            <article id="speed_botanique" class="activities">
-                <button class="openActivities">Speed Botanique</button>
-                <div class="article">
-                    <p>Par les temps qui courent, beaucoup de personnes ont vu leur cercle social diminuer et leur santée
-                        mentale en prendre un coup par la même occasion. <br />
-                        C'est pourquoi nous vous proposons aujourd'hui de venir rencontrer d'autres personnes dans un cadre
-                        respectant les règles de distanciations. <br />
-                        Que vous soyez une femme, un homme, un jeune, une
-                        personne âgée, votre place vous attend.</p>
-                    <button class="closeActivities">Close</button>
+    <section id="whatToDo">
+        <article id="speed_botanique" class="activities">
+            <div class="cards">
+                <div class="img_activities">
+                    <img src ="assets/images/speed1.jpg">
                 </div>
-            </article>
+                <button id="button_speed_botanique" class="openActivities">Speed Botanique</button>
+            </div>
+            <div class="article">
+                <p>Par les temps qui courent, beaucoup de personnes ont vu le cercle social diminuer et leurs santée
+                    mentale en prendre un coup par la même occasion. <br />
+                    C'est pourquoi nous vous proposons aujourd'hui de venir rencontrer d'autres personnes dans un cadre
+                    respectant les règles dû au covid. <br />
+                    Carré pour 6 personnes, réservation pour 2maximum, que vous soyez une femme, un homme, un jeune, une
+                    personne âgée, votre place vous attend.</p>
+                <button class="closeActivities">Close</button>
+            </div>
+        </article>
 
-            <article id="garden_party" class="activities">
-                <button class="openActivities">Garden Party</button>
-                <div class="article">
-                    <p>Vous êtes au chômage en ce moment ? N'avez simplement pas envi de travailler ? Des jours de repos ?
-                        Travaillez à la Wild Code School ?<br />
-                        Venez donc prendre quelques cours de jardinage, notre jardinier vous apprendra comment cultiver le
-                        chanvre pour produire quelques belles boutures de CBD (<a
-                            href="https://fr.wikipedia.org/wiki/Cannabidiol#:~:text=Le%20cannabidiol%20(CBD)%20est%20un,au%20moins%203%20formes%20connues."
-                            target="_blank">Cannabidiol</a>) à emporter chez vous. </p>
-                    <button class="closeActivities">Close</button>
+        <article id="garden_party" class="activities">
+            <div class="cards">
+                <div class="img_activities">
+                    <img src ="assets/images/garden1.jpg">
                 </div>
-            </article>
+                <button id="button_garden" class="openActivities">Garden Party</button>
+            </div>
+            <div class="article">
+                <p>Vous êtes au chomage en ce moment? N'avez simplement pas envi de travailler? Des jours de repos?
+                    Travaillez à la Wild Code School?<br />
+                    Venez donc prendre quelques cours de jardinage, notre jardinier vous apprendra comment cultiver le
+                    chanvre pour produire quelques belles boutures de CBD (<a
+                        href="https://fr.wikipedia.org/wiki/Cannabidiol#:~:text=Le%20cannabidiol%20(CBD)%20est%20un,au%20moins%203%20formes%20connues."
+                        target="_blank">Cannabidiol</a>) à emporter chez vous. </p>
+                <button class="closeActivities">Close</button>
+            </div>
+        </article>
 
-            <article id="hors_du_temps" class="activities">
-                <button class="openActivities">Hors du temps</button>
-                <div class="article">
-                    <p>Envi d'un peu d'évasion? Venez pratiquez l'apnée dans nos mares, vous serez en total immersion avec
-                        la nature, et nos professionnels seront là pour vous aider.</p>
-                    <button class="closeActivities">Close</button>
+        <article id="hors_du_temps" class="activities">
+            <div class="cards">
+                <div class="img_activities">
+                    <img src ="assets/images/mare1.jpg">
                 </div>
-            </article>
+                <button class="openActivities">Out of time</button>
+            </div>
+            <div class="article">
+                <p>Envi d'un peu d'évasion? Venez pratiquez l'apnée dans nos mares, vous serez en total immersion avec
+                    la nature, et nos professionnels seront là pour vous aider.</p>
+                <button class="closeActivities">Close</button>
+            </div>
+        </article>
 
-            <article id="grenouilles" class="activities">
-                <button class="openActivities">Chasse aux grenouilles</button>
-                <div class="article">
-                    <p>Vous n'en pouvez plus du télétravail avec les enfants à la maison, venez donc avec eux, profitez d'un
-                        moment pour vous tandis que vous pourrez les laisser pratiquer d'énormes parties de chasse aux
-                        grenouilles afin de les remettre dans nos mares.</p>
-                    <button class="closeActivities">Close</button>
+        <article id="grenouilles" class="activities">
+            <div class="cards">
+                <div class="img_activities">
+                    <img src ="assets/images/frog1.jpg">
                 </div>
-            </article>
-        </div>
+                <button class="openActivities">Frog Hunt</button>
+            </div>
+            <div class="article">
+                <p>Vous n'en pouvez plus du télétravail avec les enfants à la maison, venez donc avec eux, profitez d'un
+                    moment pour vous tandis que vous pourrez les laisser pratiquer d'énormes parties de chasse aux
+                    grenouilles afin de les remettre dans nos mares.</p>
+                <button class="closeActivities">Close</button>
+            </div>
+        </article>
     </section>
 
     <section class="booking" id="resa">
@@ -276,10 +295,21 @@
         </div>
     </section>
 
+    <hr />
+
     <footer>
-
+        <ul class="reseaux_sociaux">
+            <li id="icon_insta"><a href=""><img src="assets/images/logo_insta1.jpg"></a></li>
+            <li id="icon_bdx"><a href=""><img src="assets/images/logo_bdx1.jpg"></a></li>
+            <li id="icon_fb"><a href=""><img src="assets/images/logo_fb1.jpg"></a></li>
+            <li id="icon_cbd"><a href=""><img src="assets/images/logo_cbd1.jpg"></a></li>            
+        </ul>
+        <ul class="copyright">
+            <li>&copy; Untitled. All rights reserved.</li>
+            <li>Design: <a href="">Juniors of Wild Code School</a></li>
+        </ul>              
     </footer>
-
+                
     <script src="script.js"></script>
 </body>
 
