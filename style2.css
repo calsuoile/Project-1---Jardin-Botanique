@@ -11,30 +11,13 @@
 
   /* responsive presentation */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1500px) {
   
-    body {
-      width:100%;
-    }
-    
-    
-    .contener {
-      flex-direction: column;
-    }
-    
-    .element-1 {
-      display: block;
-    }
-  
-    .contener2 {
-      width: 100%;
-    }
-    .element-2 {
-      display: block;
-      width: 100%;
-    }
-    .element-3 {
-      display: block;
-      width: 100%;
-    }
+  .element-1 {
+    display: none;
+  }
+
+  .element-2 {
+    width: 80%;
+  }
   }
