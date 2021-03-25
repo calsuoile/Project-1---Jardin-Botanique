@@ -43,6 +43,13 @@ nav {
   background: #d2f5e3;
   display: flex;
 }
+<<<<<<< HEAD
+=======
+nav.sticky {
+  position: sticky;
+  top: 0%;
+}
+>>>>>>> origin/dev
 
 nav li {
   list-style: none;
@@ -69,7 +76,6 @@ nav li a:hover {
 }
 
 /*activities*/
-
 .activities {
   text-align: center;
 }
@@ -258,6 +264,7 @@ label {
   vertical-align: top;
   margin: 6px;
 }
+
 select {
   height: 22px;
   border: thin;
@@ -266,6 +273,11 @@ select {
 
 input:focus {
   background: #eaeaea;
+}
+
+input,
+textarea {
+  width: 249px;
 }
 
 input,
