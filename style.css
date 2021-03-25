@@ -7,10 +7,14 @@ body {
 }
 
 /*header*/
+#logo {
+    width: 100%;
+    height: 60%;
+}
 
 h1 {
   width: auto;
-  height: auto;
+  height: 200px;
   text-align: center;
   color: rgb(16, 39, 20);
   font-style: italic;
@@ -29,19 +33,15 @@ h1 {
   background-color: rgb(205, 248, 196, 0.6);
   opacity: 0.9;
   position: absolute;
-  top: 40px;
-  left: 70px;
-  right: 70px;
-  bottom: auto;
+  top: 30px;
+  left: 30%;
+  right: 30%;
+
 }
 /*menu web et burger*/
 nav {
   background: #d2f5e3;
   display: flex;
-}
-nav.sticky {
-  position: sticky;
-  top: 0%;
 }
 
 nav li {
@@ -74,7 +74,6 @@ nav li a:hover {
 }
 
 .article {
-  display: flex;
   padding: 10px 10px;
   top: 0;
   left: 0;
@@ -83,6 +82,7 @@ nav li a:hover {
   background-color: #3eb98a;
   border: transparent;
   border-radius: 30px;
+  display: none;
 }
 
 .openActivities:hover {
@@ -149,6 +149,9 @@ nav li a:hover {
 /*activities*/
 
 /* presentation */
+#bloc {
+  margin: 50px 10px 50px 10px;
+}
 
 .contener {
   display: flex;
@@ -363,3 +366,8 @@ audio {
 /*fin de footer*/
 
 /* fin team */
+
+/*google font*/
+body {
+  font-family: "Rajdhani", sans-serif;
+}
