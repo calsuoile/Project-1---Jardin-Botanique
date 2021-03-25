@@ -9,6 +9,9 @@
     <link href="style.css" rel="stylesheet" type="text/css">
     <link href="style2.css" rel="stylesheet" type="text/css">
     <script src="https://kit.fontawesome.com/28f544aa00.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+    </style>
 </head>
 
 <body>
@@ -16,7 +19,7 @@
         <div class="boximgheader"><img src="https://www.bwhotelcappellodoro-bg.it/resources/images/7cca6cce-003f-43a8-af0a-560eb2f82795/fr/FWB/eco-friendly-bergamo.jpg">
         </div>
         <div class="bienvenue">
-            <h1>Bienvenue au <br> <img src="assets/images/logo-jb.bmp" id="logo"> <br>de Bordeaux</h1>
+            <h1>Bienvenue au <br> <img src="assets/images/logo-jb (2).svg" id="logo"> <br>de Bordeaux</h1>
         </div>
         <div id="burger" class="burger">
         _____<br>
@@ -24,15 +27,15 @@
         _____<br>
         </div>
         <nav class="menuweb" id="navbar">
-            <li><a href="#prez">Présentation</a></li>
-            <li><a href="#whatToDo">Activités</a></li>
+            <li><a href="#bloc">Présentation</a></li>
+            <li><a href="#go-activities">Activités</a></li>
             <li><a href="#resa">Réservations</a></li>
             <li><a href="#equip">Notre équipe</a></li>
             <li><a href="#formID">Contact</a></li>
         </nav>
     </header>
 
-    <div class="bloc">
+    <div id="bloc">
         <h2>Le jardin</h2>
         <hr/>
             <section class="contener" id="prez">
@@ -137,12 +140,13 @@
                     <option value="F" name="sexe"> Femme
                 </select><br>
                 <label for="name">Nom Prénom :</label>
-                <input id="nom1" placeholder="Dupont Michel" required=""><br>
+                <input id="nom1" placeholder="Dupont Michel" required="">
+                <span id="missNomPrenom1"></span><br>
                 <label for="age" >Age :</label>
-                <input id="age" type="number" placeholder="Age minimum 16 ans" step="0,1" min="16" max="99" required=""><br>
+                <input id="age" type="number" placeholder="Age minimum 16 ans" step="0,1" min="16" max="99" required="">
+                <span id="missAge"></span><br>
                 <label for="astro-signs">Signe<br>astrologique :</label>
                 <select id="astro-signs">
-                    <option value="vide"> </option>
                     <option value="bélier"> Bélier</option>
                     <option value="taureau"> Taureau</option>
                     <option value="gémeaux"> Gémeaux</option>
@@ -168,14 +172,14 @@
             <legend>Choix de l'activité</legend>
                 <label for="activity-choice">Activité :</label>
                 <select id="activity-choice">
-                    <option value="vide"> </option>
                     <option value="speedbot"> Speed Botanique</option>
                     <option value="gardenp"> Garden Party</option>
-                    <option value="apnee"> Hors du temps</option>
-                    <option value="froghunt"> Chasse aux grenouilles</option>
+                    <option value="apnee"> Out of time</option>
+                    <option value="froghunt"> Frog Hunt</option>
                 </select><br>   
                 <label for="person-number">Nombre de<br>personnes :</label>
-                <input id="person-number" type="number" step="0,1" min="1" max="6" placeholder="Min 1 pers. - max 6 pers." required=""><br>
+                <input id="person-number" type="number" step="0,1" min="1" max="6" placeholder="Min 1 pers. - max 6 pers." required="">
+                <span id="missPersonNumber"></span><br>
                 <label for="date-choice">Date :</label>
                 <select id="date-choice">
                     <option value="1"> Lundi 22 Mars</option>
@@ -285,12 +289,14 @@
         <fieldset>
             <legend>Formulaire de contact</legend> 
                 <label for="name">Nom Prénom :</label>
-                <input id="nom" name="name" placeholder="Dupont Michel" required="">
+                <input id="nom" name="name" placeholder="Dupont Michel" autofocus="" required="">
                 <span id="missNomPrenom"></span><br>
                 <label for="email">E-mail :</label>
-                <input id="email" name="name" type="email" placeholder="michel.dupont@gmail.com" required=""><br>
+                <input id="email" name="name" type="email" placeholder="michel.dupont@gmail.com" required="">
+                <span id="missMail"></span><br>
                 <label for="message">Message :</label>
                 <textarea id="message" name="name" placeholder="Tapez votre message ici..." required=""></textarea>
+                <span id="missMsg"></span><br>
         </fieldset>
         </div>  
         <div class="bouton-form">
