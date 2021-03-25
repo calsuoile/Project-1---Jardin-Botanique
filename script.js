@@ -31,28 +31,21 @@ validationForm.addEventListener('click', function(){
 });
 //Fin pop up bouton soumettre formulaire//
 
-//Début Alerte champs vide//
-const formValid = document.getElementById("valid-button2");
-const nomPrenom = document.getElementById("nom");
-const missNomPrenom = document.getElementById("missNomPrenom");
+//Début Alerte champs vide formulaire contact//
+//const formValid = document.getElementById("valid-button2");
+//const nomPrenom = document.getElementById("nom");
+//const missNomPrenom = document.getElementById("missNomPrenom");
+//const formSent = "Votre message a bien été envoyé.";
 
+//formValid.addEventListener('click', validation);
 
+//function validation(event){
+    //if (nomPrenom.validity.valueMissing){
+        //event.preventDefault();
+        //missNomPrenom.innerHTML = "Champs non renseigné";
+        //missNomPrenom.style.color = "red";
+    //}else {
+       //alert(formSent)
+    //}
+//}
 
-
-
-<div id="menuburger">
-<div class="bar1"></div>
-<div class="bar2"></div>
-<div class="bar3"></div>
-</div>
-formValid.addEventListener('click', validation);
-
-function validation(event){
-    if (nomPrenom.validity.valueMissing){
-        event.preventDefault();
-        missNomPrenom.textContent = "Champs non renseigné";
-        missNomPrenom.style.color = "red";
-    }else {
-        alert(formSent);
-    }
-}
