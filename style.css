@@ -1,305 +1,309 @@
-
 body {
-  /*la base de css (apparemment) */
-  padding: 0;
-  margin: 0;
-  background-color: #d2f5e3;
-  hyphens: auto;
+    /*la base de css (apparemment) */
+    padding: 0;
+    margin: 0;
+    background-color: #d2f5e3;
+    hyphens: auto;
 }
 
 
-/*partie header*/
-/* id = # , class = . */
-#logo {
-  padding: 0 70px;
-}
-
-
+/*header*/
 
 h1 {
-  width: auto;
-  height: auto;
-  text-align: center;
-  color: rgb(16, 39, 20);
-  font-style: italic;
+    width: auto;
+    height: auto;
+    text-align: center;
+    color: rgb(16, 39, 20);
+    font-style: italic;
 }
 
-.boximgheader { 
-  position: relative;
-  text-align: center;}
+.boximgheader {
+    text-align: center;
+}
 
 .boximgheader img {
-  width: 100%;
+    width: 100%;
+    height: 300px;
 }
 
 .bienvenue {
-  background-color: rgb(205, 248, 196);
-  opacity: 0.9;
-  position:absolute;
-  top: 5%;
-  left: 40%;
-  right: 30%;
-  transform: translate(50%,50%);
+    background-color: rgb(205, 248, 196, .6);
+    opacity: 0.9;
+    position: absolute;
+    top: 40px;
+    left: 70px;
+    right: 70px;
+    bottom: auto;
 }
-
-nav{
-  background: #d2f5e3;
-  display: flex;
+/*menu web et burger*/
+nav {
+    background: #d2f5e3;
+    display: flex;
 }
-
-nav.fixed {
-  position: fixed;
-  top: 0;
+nav.sticky{
+    position: sticky;
+    top: 0%;
 }
-
 nav li {
-  list-style: none;
-  width: 100%;
+    list-style: none;
+    width: 100%;
 }
 
 nav li a {
-  display: block;
-  background: #94b4a4;
-  padding: 2em;
-  text-align: center;
-  box-shadow: 1px 1px 0 #0da;
-  color: black;
-  
+    display: block;
+    background: #94b4a4;
+    padding: 2em;
+    text-align: center;
+    box-shadow: 1px 1px 0 #0da;
+    color: black;
 }
 
 nav li a:hover {
-  background: #0DA;
+    background: #0DA;
+}
+/*menu burger*/
+.burger {
+    color: sienna;
+    display: none;
+    cursor: pointer;
 }
 
-
-
-
 /*activities*/
+
 .activities {
-  text-align: center;
+    text-align: center;
 }
 
 .article {
-  display: flex;
-  margin-top: 20px;
-  margin-left: 25px;
-  padding: 20px 20px; 
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #3eb98a;
-  display: none;
-  border: transparent;
-  border-radius: 30px;
-  width: 90%;
-  justify-content: space-between;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 25px;
+    padding: 20px 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3eb98a;
+    display: none;
+    border: transparent;
+    border-radius: 30px;
+    width: 90%;
+    justify-content: space-between;
 }
 
-.openActivities:hover{
-  background-color:  #0DA;
-  transform: scale(1.5);
+.openActivities:hover {
+    background-color: #0DA;
+    transform: scale(1.5);
 }
 
 .closeActivities {
-  padding: 10px 20px;
-  background-color: #94b4a4;
-  color: #fff;
-  border: transparent;
-  border-radius: 40px;
-  font-size: 1.7rem;
-  width: 80px;
-  font-size: medium;
-  margin: 10px;
+    padding: 10px 20px;
+    background-color: #94b4a4;
+    color: #fff;
+    border: transparent;
+    border-radius: 40px;
+    font-size: 1.7rem;
+    width: 80px;
+    font-size: medium;
+    margin: 10px;
 }
 
 .openActivities {
-  padding: 10px 20px;
-  background-color:  #94b4a4;
-  color: #fff;
-  border: transparent;
-  border-radius: 40px;
-  box-shadow: 10px 5px 5px rgb(80, 94, 88);
-  font-size: 1.7rem;
-  width: 200px;
-  height: 85px;
-  margin-top: 40px;
-  margin-bottom: 50px;
+    padding: 10px 20px;
+    background-color: #94b4a4;
+    color: #fff;
+    border: transparent;
+    border-radius: 40px;
+    box-shadow: 10px 5px 5px rgb(80, 94, 88);
+    font-size: 1.7rem;
+    width: 200px;
+    height: 85px;
+    margin-top: 40px;
+    margin-bottom: 50px;
 }
 
 #whatToDo {
-  align-items: baseline;
-  display: flex;
-  flex-flow: row, wrap;
-  justify-content: space-around;
-  margin-top: 40px;
-  margin-bottom: 40px;
+    align-items: baseline;
+    display: flex;
+    flex-flow: row, wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
+
+
 /*activities*/
 
+
 /* presentation */
+
 .bloc {
-  margin: 100px 0 100px 0;
+    margin: 100px 0 100px 0;
 }
 
 .contener {
-  display: flex;
-  justify-content: space-around;
-  background-color: #d2f5e3;
-  margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #d2f5e3;
+    margin: 20px;
 }
 
 .contener-box1 {
-  width: 40%;
-  margin: 20px;
+    width: 40%;
+    margin: 20px;
 }
 
 .contener-box1 img {
-  width: 100%;
+    width: 100%;
 }
 
 .contener-box2 {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  margin-right: 30px;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-right: 30px;
+    justify-content: space-between;
 }
 
 .contener-box2-element-1 {
-  font-size: 1.5rem;
-  text-align: justify;
-  line-height: 1.8;
-  letter-spacing: 1.5px;
-  margin: 15px;
+    font-size: 1.5rem;
+    text-align: justify;
+    line-height: 1.8;
+    letter-spacing: 1.5px;
+    margin: 15px;
 }
 
 .contener-box2-element-2 {
-  background-color: #94b4a4;
-  font-size: 50px;
-  font-style: italic;
-  margin: 15px;
-  text-align: center;
-  box-sizing: content-box;
+    background-color: #94b4a4;
+    font-size: 50px;
+    font-style: italic;
+    margin: 15px;
+    text-align: center;
+    box-sizing: content-box;
 }
 
+
 /* début mise en forme formulaire booking */
-.booking, .form {
-  margin: 50px 10px 50px 10px;
+
+.booking,
+.form {
+    margin: 50px 10px 50px 10px;
 }
 
 hr {
-  border-color: #d2f5e3;
+    border-color: #d2f5e3;
 }
 
 fieldset {
-  margin-bottom: 15px;
-  padding: 10px; 
-  width: 50%;
-  border-color: #94b4a4;
-  margin: 2px;
-
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 50%;
+    border-color: #94b4a4;
+    margin: 2px;
 }
 
 .reservation {
-  display: flex;
+    display: flex;
 }
 
 .formulaire {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .bouton-booking {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .bouton-form {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 legend {
-  padding: 0px 3px;
-  font-weight: bold;
-  font-variant: small-caps;
+    padding: 0px 3px;
+    font-weight: bold;
+    font-variant: small-caps;
 }
- 
-label {
-  width: 110px;
-  display: inline-block;
-  vertical-align: top;
-  margin: 6px;
-  
-}
- 
-input:focus {
-  background: #eaeaea;
-}
- 
-input, textarea {
-  width: 249px;
 
+label {
+    width: 110px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 6px;
 }
- 
+
+input:focus {
+    background: #eaeaea;
+}
+
+input,
 textarea {
-  height: 100px;
+    width: 249px;
 }
- 
+
+textarea {
+    height: 100px;
+}
+
 select {
-  width: 254px;
+    width: 254px;
 }
- 
+
 input[type=submit] {
-  width: 100px;
-  padding: 10px;
-  background-color:#94b4a4;
-  color: #fff;
-  border-width: thin;
-  box-shadow: 1px 1px 0 #0DA;
-  border-radius: 3px;  
+    width: 100px;
+    padding: 10px;
+    background-color: #94b4a4;
+    color: #fff;
+    border-width: thin;
+    box-shadow: 1px 1px 0 #0DA;
+    border-radius: 3px;
 }
 
 input[type=submit]:hover {
-  background: #0DA;
+    background: #0DA;
 }
+
 
 /* fin mise en forme formulaire booking */
 
+
 /* team */
+
 .team-content-element {
-  display: flex;
-  padding: 20px;
+    display: flex;
+    padding: 20px;
 }
 
 .team-content-element-item {
-  display: flex;
-  text-align: center;
-  margin: auto;
-  max-width: 40rem;
-  max-height: 30rem;
-  background-color: #94b4a4;
-  border-radius:  2rem 2rem;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    max-width: 40rem;
+    max-height: 30rem;
+    background-color: #94b4a4;
+    border-radius: 2rem 2rem;
 }
 
 .team-content-element-item img {
-  border-radius: 2rem 0 0 2rem;
-  min-height: 10rem;
+    border-radius: 2rem 0 0 2rem;
+    min-height: 10rem;
 }
 
 .team-content-element-item-group {
-  padding: 1rem;
-  width: 20rem;
-  margin: auto;
+    padding: 1rem;
+    width: 20rem;
+    margin: auto;
 }
 
 .team-content-element-item figure figcaption {
-  padding: 4rem 0;
+    padding: 4rem 0;
 }
 
 .team-content-element-name {
-  margin-top: 2rem;
+    margin-top: 2rem;
 }
+
 
 /* fin team */

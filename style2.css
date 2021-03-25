@@ -1,40 +1,45 @@
 /* menuburger*/
 
-#menuburger .bar1, #menuburger .bar2, #menuburger .bar3 {
-    width:32px; 
-    height:5px; 
-    background-color:#94b4a4; 
-    margin:6px 0; 
-    transition:0.4s; ;
+@media screen and (max-width: 750px) {
+  .menuweb {
+    flex-direction: column;
   }
+  .burger {
+    display: block;
+    position: sticky;
+  }
+  nav {
+    display: none;
+  }
+}
+.display-block {
+  display: block;
+}
 
-
-  /* responsive presentation */
+/* responsive presentation */
 
 @media screen and (max-width: 600px) {
-  
-    body {
-      width:100%;
-    }
-    
-    
-    .contener {
-      flex-direction: column;
-    }
-    
-    .element-1 {
-      display: block;
-    }
-  
-    .contener2 {
-      width: 100%;
-    }
-    .element-2 {
-      display: block;
-      width: 100%;
-    }
-    .element-3 {
-      display: block;
-      width: 100%;
-    }
+  body {
+    width: 100%;
   }
+
+  .contener {
+    flex-direction: column;
+  }
+
+  .element-1 {
+    display: block;
+  }
+
+  .contener2 {
+    width: 100%;
+  }
+  .element-2 {
+    display: block;
+    width: 100%;
+  }
+  .element-3 {
+    display: block;
+    width: 100%;
+  }
+}
