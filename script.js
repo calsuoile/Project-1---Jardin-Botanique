@@ -109,7 +109,6 @@ burgerMenu.addEventListener("click", () => {
   navbar.classList.toggle("display-block");
 });
 
-<<<<<<< HEAD
 // Utilisation du scroll exécute la fonction
 window.onscroll = function () {
   myFunction();
@@ -129,9 +128,4 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
-=======
 
-
-
-const nav =document.getElementById("navbar");
->>>>>>> origin/dev
