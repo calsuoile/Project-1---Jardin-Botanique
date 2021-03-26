@@ -18,13 +18,8 @@
 
 /* responsive presentation */
 
-@media screen and (max-width: 1500px) {
-  
-  .element-1 {
-    display: none;
-  }
-
+@media screen and (max-width: 1200px) {
   .element-2 {
     width: 80%;
   }
-  }
+}
