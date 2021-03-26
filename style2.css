@@ -27,8 +27,6 @@
   }
 }
 
-
-
 /* responsive presentation */
 
 @media screen and (max-width: 1405px) {
@@ -43,13 +41,16 @@
   body {
     background-color: #ffd9b3;
   }
+}
 
 @media screen and (max-width: 768px) {
   body {
     background-color: whitesmoke;
   }
+}
 
 @media screen and (max-width: 768px) {
   .bienvenue {
-    display:none;
+    display: none;
   }
+}
