@@ -73,6 +73,7 @@ nav li a:hover {
 }
 
 .article {
+  display: none;
   padding: 10px 10px;
   top: 0;
   left: 0;

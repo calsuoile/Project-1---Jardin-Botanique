@@ -18,8 +18,39 @@
 
 /* responsive presentation */
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1405px) {
   .element-2 {
     width: 80%;
+  }
+  body {
+    background-color: #ffff99;
+  }
+}
+
+/* responsive presentation */
+
+@media screen and (max-width: 1405px) {
+  h2 {
+    text-align: center;
+  }
+}
+
+/* responsive presentation */
+
+@media screen and (max-width: 992px) {
+  body {
+    background-color: #ffd9b3;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-color: whitesmoke;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bienvenue {
+    display: none;
   }
 }
