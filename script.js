@@ -108,3 +108,23 @@ const navBar = document.querySelector(".menuweb");
 burgerMenu.addEventListener("click", () => {
   navbar.classList.toggle("display-block");
 });
+
+// Utilisation du scroll exécute la fonction
+window.onscroll = function () {
+  myFunction();
+};
+
+// Variable pour la navBar
+const navbar = document.getElementById("navbar");
+
+// variable et navBar sur le top
+const sticky = navbar.offsetTop;
+
+// Suivant la position de la navBar supprimer ou pas la classe sticky
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
