@@ -8,8 +8,8 @@ body {
 
 /*header*/
 #logo {
-    width: 100%;
-    height: 60%;
+  width: 100%;
+  height: 60%;
 }
 
 h1 {
@@ -36,7 +36,6 @@ h1 {
   top: 30px;
   left: 30%;
   right: 30%;
-
 }
 /*menu web et burger*/
 nav {
@@ -74,6 +73,7 @@ nav li a:hover {
 }
 
 .article {
+  display: none;
   padding: 10px 10px;
   top: 0;
   left: 0;
